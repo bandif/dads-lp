@@ -1,0 +1,50 @@
+---
+import "../styles/global.css";
+
+type Props = {
+  title: string;
+  description: string;
+};
+
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? "https://fitymaszukulet.hu");
+
+const physicianSchema = {
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  name: "Dr. Fekete Ferenc",
+  medicalSpecialty: "Urology",
+  url: canonical.toString(),
+  telephone: "+36 30 311 3045",
+  email: "feketedoktor@gmail.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Kapás utca 26.",
+    addressLocality: "Budapest",
+    postalCode: "1027",
+    addressCountry: "HU",
+  },
+};
+---
+
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="hu_HU" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL("/og.jpg", Astro.site ?? "https://fitymaszukulet.hu")} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(physicianSchema)} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

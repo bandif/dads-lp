@@ -1,0 +1,51 @@
+---
+const facts = [
+  { value: "1982", label: "orvosi diploma, Semmelweis Egyetem" },
+  { value: "1987", label: "urológiai szakvizsga" },
+  { value: "FECSM", label: "európai szexuális medicina szakember" },
+];
+
+const credentials = [
+  "2000 óta a Semmelweis Egyetem Urológiai Klinikájának munkatársa.",
+  "Fő szakterülete a férfi nemi szervek betegségei és műtéti kezelése.",
+  "A Magyar Szexuális Medicina Társaság elnöke volt 2008 és 2018 között.",
+];
+---
+
+<section class="section" id="orvos" aria-labelledby="doctor-title">
+  <div class="container doctor-grid">
+    <div class="doctor-photo">
+      <img
+        src="/dr-fekete-ferenc-mutoben.jpg"
+        alt="Dr. Fekete Ferenc műtéti környezetben"
+        width="1280"
+        height="960"
+        loading="lazy"
+      />
+    </div>
+    <div class="doctor-copy">
+      <p class="eyebrow">A rendelésről</p>
+      <h2 id="doctor-title">Dr. Fekete Ferenc</h2>
+      <p class="subheading">Urológus szakorvos</p>
+      <p>
+        Dr. Fekete Ferenc 1982-ben diplomázott a budapesti Semmelweis Egyetemen,
+        majd 1987-ben szakvizsgázott urológiából. Több évtizedes klinikai és
+        magánrendelői tapasztalattal foglalkozik férfi urológiai panaszokkal,
+        különösen fitymaszűkület, rövid fék és kapcsolódó műtéti problémák
+        ellátásával.
+      </p>
+      <ul class="credential-list">
+        {credentials.map((credential) => <li>{credential}</li>)}
+      </ul>
+      <div class="fact-grid">
+        {facts.map((fact) => (
+          <div class="fact">
+            <strong>{fact.value}</strong>
+            <span>{fact.label}</span>
+          </div>
+        ))}
+      </div>
+      <a class="button button-secondary" href="#kapcsolat">Bővebben rólam</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,37 @@
+---
+const contacts = [
+  { label: "Telefon", value: "+36 30 311 3045", href: "tel:+36303113045" },
+  { label: "E-mail", value: "feketedoktor@gmail.com", href: "mailto:feketedoktor@gmail.com" },
+  { label: "Rendelő", value: "1027 Budapest, Kapás utca 26.", href: "https://maps.google.com/?q=1027%20Budapest%2C%20Kap%C3%A1s%20utca%2026" },
+];
+---
+
+<section class="section contact-section" id="kapcsolat" aria-labelledby="contact-title">
+  <div class="container contact-panel">
+    <div>
+      <p class="eyebrow">Kapcsolat</p>
+      <h2 id="contact-title">Kérjen időpontot</h2>
+      <p>
+        Ha fitymaszűkülettel, rövid fékkel vagy kapcsolódó problémával kapcsolatban
+        szeretne segítséget kérni, keressen bizalommal.
+      </p>
+      <div class="contact-actions">
+        <a class="button button-primary" href="tel:+36303113045">Telefonálok</a>
+        <a class="button button-light" href="mailto:feketedoktor@gmail.com">E-mailt írok</a>
+      </div>
+    </div>
+    <address class="contact-list">
+      {contacts.map((contact) => (
+        <a href={contact.href}>
+          <span>{contact.label}</span>
+          <strong>{contact.value}</strong>
+        </a>
+      ))}
+    </address>
+  </div>
+</section>
+
+<div class="mobile-contact-bar" aria-label="Gyors kapcsolatfelvétel">
+  <a href="tel:+36303113045">Telefonálok</a>
+  <a href="#kapcsolat">Időpont</a>
+</div>

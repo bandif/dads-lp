@@ -1,0 +1,34 @@
+---
+const steps = [
+  {
+    title: "Vegye fel velem a kapcsolatot",
+    text: "Telefonon vagy e-mailben.",
+  },
+  {
+    title: "Rövid egyeztetés",
+    text: "Megbeszéljük a panaszt és a következő lépést.",
+  },
+  {
+    title: "Személyes vizsgálat",
+    text: "Vizsgálat és szükség esetén a kezelési lehetőségek megbeszélése a budapesti rendelőben.",
+  },
+];
+---
+
+<section class="section section-soft" aria-labelledby="process-title">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Egyszerű kapcsolatfelvétel</p>
+      <h2 id="process-title">Hogyan kérhet időpontot?</h2>
+    </div>
+    <ol class="process-grid">
+      {steps.map((step, index) => (
+        <li>
+          <span>{index + 1}</span>
+          <h3>{step.title}</h3>
+          <p>{step.text}</p>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>

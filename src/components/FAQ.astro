@@ -1,0 +1,60 @@
+---
+const faqs = [
+  {
+    question: "Mik a fitymaszűkület tünetei?",
+    answer:
+      "Jellemző lehet a fityma nehéz vagy fájdalmas hátrahúzása, feszülés, berepedés, illetve visszatérő gyulladás. A pontos okot vizsgálat alapján lehet megítélni.",
+  },
+  {
+    question: "Mikor érdemes orvoshoz fordulni?",
+    answer:
+      "Ha a panasz fájdalmat, gyulladást, sérülést, tisztálkodási nehézséget vagy szexuális együttlét közbeni kellemetlenséget okoz, érdemes urológussal egyeztetni.",
+  },
+  {
+    question: "Elkerülhető a körülmetélés?",
+    answer:
+      "Ez az állapottól és a szűkület mértékétől függ. Bizonyos esetekben többféle kezelési lehetőség merülhet fel, ezekről személyes vizsgálat után lehet felelősen beszélni.",
+  },
+  {
+    question: "Fájdalmas a beavatkozás?",
+    answer:
+      "A beavatkozások fájdalomcsillapítás mellett történnek. A várható kellemetlenségről, teendőkről és kockázatokról az egyeztetés során részletes tájékoztatás adható.",
+  },
+  {
+    question: "Mennyi ideig tart a gyógyulás?",
+    answer:
+      "A gyógyulási idő az elvégzett beavatkozástól és az egyéni adottságoktól függ. A személyes vizsgálat során lehet pontosabb, személyre szabott tájékoztatást kapni.",
+  },
+  {
+    question: "Mikor lehet újra nemi életet élni?",
+    answer:
+      "Erről mindig az adott beavatkozás és gyógyulási folyamat alapján érdemes dönteni. A kontroll és az orvosi javaslat segít meghatározni a biztonságos időpontot.",
+  },
+  {
+    question: "Hogyan lehet időpontot kérni?",
+    answer:
+      "Telefonon a +36 30 311 3045 számon vagy e-mailben a feketedoktor@gmail.com címen lehet kapcsolatba lépni a rendelővel.",
+  },
+];
+---
+
+<section class="section" id="gyakori-kerdesek" aria-labelledby="faq-title">
+  <div class="container faq-grid">
+    <div>
+      <p class="eyebrow">Tájékozódás</p>
+      <h2 id="faq-title">Gyakori kérdések</h2>
+      <p class="muted">
+        Rövid, általános válaszok a leggyakoribb kérdésekre. A konkrét teendőkről
+        személyes egyeztetés alapján lehet dönteni.
+      </p>
+    </div>
+    <div class="faq-list">
+      {faqs.map((faq) => (
+        <details>
+          <summary>{faq.question}</summary>
+          <p>{faq.answer}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

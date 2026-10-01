@@ -1,0 +1,34 @@
+---
+const problems = [
+  {
+    title: "Fitymaszűkület",
+    text: "A fityma nehéz hátrahúzhatósága, feszülés, fájdalom vagy visszatérő gyulladás esetén.",
+  },
+  {
+    title: "Rövid fék",
+    text: "Feszülés, fájdalom vagy sérülés szexuális együttlét során.",
+  },
+  {
+    title: "Kapcsolódó urológiai problémák",
+    text: "Papulák, péniszgörbület és egyéb férfi urológiai panaszok.",
+  },
+];
+---
+
+<section class="section" aria-labelledby="problemak-title">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Panaszok és kezelési területek</p>
+      <h2 id="problemak-title">Miben tudok segíteni?</h2>
+    </div>
+    <div class="card-grid">
+      {problems.map((problem) => (
+        <article class="problem-card">
+          <h3>{problem.title}</h3>
+          <p>{problem.text}</p>
+          <a href="#kapcsolat" aria-label={`${problem.title}: kapcsolatfelvétel`}>Tovább</a>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

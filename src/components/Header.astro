@@ -1,0 +1,35 @@
+---
+const navItems = [
+  { label: "Fitymaszűkület", href: "#fitymaszukulet" },
+  { label: "Dr. Fekete Ferenc", href: "#orvos" },
+  { label: "Gyakori kérdések", href: "#gyakori-kerdesek" },
+  { label: "Kapcsolat", href: "#kapcsolat" },
+];
+---
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="Dr. Fekete Ferenc főoldal">
+      <span>Dr. Fekete Ferenc</span>
+      <small>Urológus szakorvos</small>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Fő navigáció">
+      {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+    </nav>
+
+    <a class="button button-primary header-cta" href="#kapcsolat">Időpont egyeztetés</a>
+
+    <details class="mobile-menu">
+      <summary aria-label="Menü megnyitása">
+        <span></span>
+        <span></span>
+        <span></span>
+      </summary>
+      <nav aria-label="Mobil navigáció">
+        {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+        <a class="button button-primary" href="#kapcsolat">Időpont egyeztetés</a>
+      </nav>
+    </details>
+  </div>
+</header>
