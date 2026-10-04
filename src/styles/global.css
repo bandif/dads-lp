@@ -213,6 +213,7 @@ p {
 }
 
 .hero-grid {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   min-height: clamp(640px, 52vw, 800px);
