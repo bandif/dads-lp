@@ -6,13 +6,14 @@ import FAQ from "../components/FAQ.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
-import PhimosisIntro from "../components/PhimosisIntro.astro";
+import Testimonials from "../components/Testimonials.astro";
+import WhyChooseDoctor from "../components/WhyChooseDoctor.astro";
 import ProblemCards from "../components/ProblemCards.astro";
 import Process from "../components/Process.astro";
 
-const title = "Fitymaszűkület kezelés Budapesten | Dr. Fekete Ferenc urológus";
+const title = "Dr. Fekete Ferenc urológus | Magánrendelés Budapesten";
 const description =
-  "Fitymaszűkület, rövid fék és kapcsolódó urológiai problémák kivizsgálása és kezelése Budapesten Dr. Fekete Ferenc urológus szakorvosnál.";
+  "Dr. Fekete Ferenc urológus több mint 30 éves műtéti tapasztalattal. Szakterületek, bemutatkozás és időpontkérés a budapesti, Kapás utcai magánrendelésre.";
 ---
 
 <Layout title={title} description={description}>
@@ -20,8 +21,9 @@ const description =
   <main>
     <Hero />
     <ProblemCards />
-    <PhimosisIntro />
+    <Testimonials />
     <AboutDoctor />
+    <WhyChooseDoctor />
     <Process />
     <FAQ />
     <ContactCTA />

@@ -1,3 +1,6 @@
+---
+import { practice } from "../data/practice";
+---
 <footer class="site-footer">
   <div class="container footer-inner">
     <div>
@@ -5,9 +8,9 @@
       <span>Urológus szakorvos</span>
     </div>
     <address>
-      <a href="tel:+36303113045">+36 30 311 3045</a>
-      <a href="mailto:feketedoktor@gmail.com">feketedoktor@gmail.com</a>
-      <span>1027 Budapest, Kapás utca 26.</span>
+      <a href={practice.phoneHref}>{practice.phone}</a>
+      <a href={`mailto:${practice.email}`}>{practice.email}</a>
+      <span>{practice.address}</span>
     </address>
     <small>© {new Date().getFullYear()} Dr. Fekete Ferenc. Minden jog fenntartva.</small>
   </div>

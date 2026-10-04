@@ -1,20 +1,10 @@
 ---
 const problems = [
-  {
-    title: "Fitymaszűkület",
-    text: "A fityma nehéz hátrahúzhatósága, feszülés, fájdalom vagy visszatérő gyulladás esetén.",
-  },
-  {
-    title: "Rövid fék",
-    text: "Feszülés, fájdalom vagy sérülés szexuális együttlét során.",
-  },
-  {
-    title: "Kapcsolódó urológiai problémák",
-    text: "Papulák, péniszgörbület és egyéb férfi urológiai panaszok.",
-  },
+  { title: "Fitymaszűkület, rövid fék", href: "/fitymaszukulet/", text: "Feszülés, fájdalom, nehéz hátrahúzhatóság vagy visszatérő sérülések esetén: a panaszok kivizsgálása és személyre szabott kezelése." },
+  { title: "Papulák a makk peremén", href: "/papulak/", text: "A makk peremén megjelenő apró kiemelkedések vizsgálata és a kezelési lehetőségek átbeszélése." },
+  { title: "Péniszgörbület", href: "/peniszgorbulet/", text: "A nemi életet zavaró görbület kivizsgálása és az egyéni panaszokhoz igazodó kezelési lehetőségek." },
 ];
 ---
-
 <section class="section" aria-labelledby="problemak-title">
   <div class="container">
     <div class="section-heading">
@@ -26,7 +16,7 @@ const problems = [
         <article class="problem-card">
           <h3>{problem.title}</h3>
           <p>{problem.text}</p>
-          <a href="#kapcsolat" aria-label={`${problem.title}: kapcsolatfelvétel`}>Tovább</a>
+          <a class="button button-secondary" href={problem.href} aria-label={`${problem.title}: részletek`}>Tovább <span aria-hidden="true">→</span></a>
         </article>
       ))}
     </div>

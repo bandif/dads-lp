@@ -1,0 +1,47 @@
+---
+const reasons = [
+  {
+    title: "Diszkrét, négyszemközti ellátás",
+    text: "A vizsgálat, a panaszok megbeszélése és a kezelés négyszemközt zajlik. Intim problémáival figyelmes, személyes környezetben fordulhat hozzám.",
+    icon: "M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6l-8-3Z M9 12l2 2 4-4",
+  },
+  {
+    title: "Közvetlen kapcsolat, a kezelés után is",
+    text: "E-mailben személyesen válaszolok a kérdéseire a kezelés előtt és után is. A felépülést sebápolási útmutatás és kontrollvizsgálat segíti.",
+    icon: "M4 4h16v12H9l-5 4V4Z M8 8h8 M8 12h5",
+  },
+  {
+    title: "Kevesebb külön látogatás",
+    text: "Előzetes egyeztetéssel a rövid fék és a papulák kezelése már az első vizit során is megtörténhet, ha a vizsgálat alapján elvégezhető.",
+    icon: "M4 5h16v16H4V5Z M8 3v4 M16 3v4 M4 10h16 M9 15l2 2 4-4",
+  },
+  {
+    title: "Az Ön adottságaihoz igazított kezelés",
+    text: "A megoldást az Ön állapotához igazítom. Előre átbeszéljük, milyen működésbeli és esztétikai eredmény várható reálisan.",
+    icon: "M4 7h16 M4 17h16 M8 4v6 M16 14v6",
+  },
+];
+---
+
+<section class="section section-soft" id="miert-valasszon" aria-labelledby="reasons-title">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Személyes figyelem, minden lépésnél</p>
+      <h2 id="reasons-title">Miért válasszon engem?</h2>
+      <p>A szakmai tapasztalat mellett az is fontos, hogyan érzi magát a vizsgálattól a felépülésig.</p>
+    </div>
+    <ul class="reasons-grid">
+      {reasons.map((reason) => (
+        <li class="reason-card">
+          <span class="reason-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d={reason.icon} />
+            </svg>
+          </span>
+          <h3>{reason.title}</h3>
+          <p>{reason.text}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

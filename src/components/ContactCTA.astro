@@ -1,8 +1,9 @@
 ---
+import { practice } from "../data/practice";
 const contacts = [
-  { label: "Telefon", value: "+36 30 311 3045", href: "tel:+36303113045" },
-  { label: "E-mail", value: "feketedoktor@gmail.com", href: "mailto:feketedoktor@gmail.com" },
-  { label: "Rendelő", value: "1027 Budapest, Kapás utca 26.", href: "https://maps.google.com/?q=1027%20Budapest%2C%20Kap%C3%A1s%20utca%2026" },
+  { label: "Telefon", value: practice.phone, href: practice.phoneHref },
+  { label: "E-mail", value: practice.email, href: `mailto:${practice.email}` },
+  { label: "Rendelő", value: practice.address, href: practice.mapUrl },
 ];
 ---
 
@@ -16,9 +17,10 @@ const contacts = [
         szeretne segítséget kérni, keressen bizalommal.
       </p>
       <div class="contact-actions">
-        <a class="button button-primary" href="tel:+36303113045">Telefonálok</a>
-        <a class="button button-light" href="mailto:feketedoktor@gmail.com">E-mailt írok</a>
+        <a class="button button-primary" href={practice.phoneHref}>Telefonálok</a>
+        <a class="button button-light" href={`mailto:${practice.email}`}>E-mailt írok</a>
       </div>
+      <p class="contact-hours">Rendelés: {practice.officeHours}.</p>
     </div>
     <address class="contact-list">
       {contacts.map((contact) => (
@@ -32,6 +34,6 @@ const contacts = [
 </section>
 
 <div class="mobile-contact-bar" aria-label="Gyors kapcsolatfelvétel">
-  <a href="tel:+36303113045">Telefonálok</a>
+  <a href={practice.phoneHref}>Telefonálok</a>
   <a href="#kapcsolat">Időpont</a>
 </div>

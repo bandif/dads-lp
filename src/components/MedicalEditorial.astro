@@ -1,0 +1,21 @@
+---
+import { medicalContent } from "../data/medical-content";
+import { practice } from "../data/practice";
+const path = `${Astro.url.pathname.replace(/\/$/, "")}/`;
+const content = medicalContent[path];
+const formatDate = (date: string) => new Intl.DateTimeFormat("hu-HU", {
+  year: "numeric", month: "long", day: "numeric", timeZone: "Europe/Berlin",
+}).format(new Date(`${date}T12:00:00Z`));
+---
+{content && (
+  <aside class="medical-editorial" aria-label="Szakorvos és tartalmi háttér">
+    <p>Ellátó szakorvos: <a class="text-link" href={practice.profilePath}>{practice.name}, urológus szakorvos</a></p>
+    <p>Szerkesztési frissítés: <time datetime={content.updated}>{formatDate(content.updated)}</time></p>
+    {content.reviewedOn && <p>Orvosilag ellenőrizte: <a href={practice.profilePath}>{practice.name}</a> · <time datetime={content.reviewedOn}>{formatDate(content.reviewedOn)}</time></p>}
+    <p>Általános betegtájékoztató; az egyéni kezelési tervet személyes vizsgálat alapján lehet meghatározni.</p>
+    <details>
+      <summary>Szakmai források</summary>
+      <ul>{content.sources.map(source => <li><a class="text-link" href={source.url}>{source.name} (angolul)</a></li>)}</ul>
+    </details>
+  </aside>
+)}

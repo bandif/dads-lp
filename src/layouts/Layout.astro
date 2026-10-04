@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import { practice } from "../data/practice";
+import { medicalContent } from "../data/medical-content";
 
 type Props = {
   title: string;
@@ -7,23 +9,59 @@ type Props = {
 };
 
 const { title, description } = Astro.props;
-const canonical = new URL(Astro.url.pathname, Astro.site ?? "https://fitymaszukulet.hu");
-
-const physicianSchema = {
+const site = Astro.site ?? new URL("https://fitymaszukulet.hu");
+const path = Astro.url.pathname === "/" ? "/" : Astro.url.pathname.replace(/\/$/, "") + "/";
+const canonical = new URL(path, site);
+const doctorId = new URL("/dr-fekete-ferenc/#person", site).href;
+const practiceId = new URL("/#practice", site).href;
+const websiteId = new URL("/#website", site).href;
+const content = medicalContent[path];
+const schema = {
   "@context": "https://schema.org",
-  "@type": "Physician",
-  name: "Dr. Fekete Ferenc",
-  medicalSpecialty: "Urology",
-  url: canonical.toString(),
-  telephone: "+36 30 311 3045",
-  email: "feketedoktor@gmail.com",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Kapás utca 26.",
-    addressLocality: "Budapest",
-    postalCode: "1027",
-    addressCountry: "HU",
-  },
+  "@graph": [
+    {
+      "@type": "Person", "@id": doctorId,
+      name: practice.name, jobTitle: "Urológus szakorvos",
+      url: new URL(practice.profilePath, site).href,
+      image: new URL("/dr-fekete-ferenc-mutoben.jpg", site).href,
+      worksFor: { "@id": practiceId },
+    },
+    {
+      "@type": "Physician", "@id": practiceId,
+      name: practice.name, url: new URL("/", site).href,
+      medicalSpecialty: "https://schema.org/Urology",
+      telephone: practice.phone, email: practice.email,
+      image: new URL("/hero-dr-fekete-ferenc.jpg", site).href,
+      hasMap: practice.mapUrl,
+      address: {
+        "@type": "PostalAddress", streetAddress: "Kapás utca 26.",
+        addressLocality: "Budapest", postalCode: "1027", addressCountry: "HU",
+      },
+      openingHoursSpecification: [
+        { "@type": "OpeningHoursSpecification", dayOfWeek: ["https://schema.org/Tuesday", "https://schema.org/Thursday"], opens: "09:00", closes: "12:00" },
+        { "@type": "OpeningHoursSpecification", dayOfWeek: ["https://schema.org/Tuesday", "https://schema.org/Thursday"], opens: "16:00", closes: "19:00" },
+      ],
+    },
+    {
+      "@type": "WebSite", "@id": websiteId,
+      name: "Dr. Fekete Ferenc – urológiai magánrendelés",
+      url: new URL("/", site).href, inLanguage: "hu-HU",
+      publisher: { "@id": practiceId },
+    },
+    {
+      "@type": content ? "MedicalWebPage" : path === practice.profilePath ? "ProfilePage" : "WebPage",
+      "@id": canonical.href + "#webpage", url: canonical.href,
+      name: title, description, inLanguage: "hu-HU",
+      isPartOf: { "@id": websiteId }, publisher: { "@id": practiceId },
+      ...(path === practice.profilePath ? { mainEntity: { "@id": doctorId } } : {}),
+      ...(path === "/" ? { about: { "@id": practiceId } } : {}),
+      ...(content ? {
+        dateModified: content.updated,
+        citation: content.sources.map(source => source.url),
+        ...(content.reviewedOn ? { lastReviewed: content.reviewedOn, reviewedBy: { "@id": doctorId } } : {}),
+      } : {}),
+    },
+  ],
 };
 ---
 
@@ -41,10 +79,15 @@ const physicianSchema = {
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={new URL("/og.jpg", Astro.site ?? "https://fitymaszukulet.hu")} />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <meta property="og:site_name" content="Dr. Fekete Ferenc" />
     <meta name="twitter:card" content="summary_large_image" />
-    <script is:inline type="application/ld+json" set:html={JSON.stringify(physicianSchema)} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, "\\u003c")} />
   </head>
   <body>
     <slot />
+    <script>
+      import "../scripts/contents-navigation";
+    </script>
   </body>
 </html>

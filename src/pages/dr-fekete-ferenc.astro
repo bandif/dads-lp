@@ -1,0 +1,76 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import ContactCTA from "../components/ContactCTA.astro";
+---
+<Layout title="Dr. Fekete Ferenc – szakmai bemutatkozás" description="Dr. Fekete Ferenc urológus szakorvos szakmai pályája, műtéti tapasztalata, oktatói munkája és könyvei.">
+  <Header />
+  <main>
+    <section class="section section-soft">
+      <div class="container doctor-grid">
+        <div class="doctor-photo">
+          <img src="/dr-fekete-ferenc-mutoben.jpg" alt="Dr. Fekete Ferenc műtéti környezetben" width="1280" height="960" />
+        </div>
+        <div class="doctor-copy">
+          <a class="text-link" href="/#orvos">← Vissza a főoldalra</a>
+          <p class="eyebrow profile-eyebrow">Szakmai bemutatkozás</p>
+          <h1>Dr. Fekete Ferenc</h1>
+          <p class="subheading">Urológus szakorvos · FECSM</p>
+          <p class="condition-lead">Fő szakterülete a férfi nemi szervek betegségeinek kivizsgálása és műtéti kezelése. Több évtizedes klinikai tapasztalata mellett egyetemi oktatással és szakmai könyvek írásával is foglalkozik.</p>
+          <a class="button button-primary" href="#kapcsolat">Időpont egyeztetés</a>
+        </div>
+      </div>
+    </section>
+    <div class="container condition-layout">
+      <aside class="condition-nav" aria-label="Az oldal tartalma">
+        <p class="eyebrow">Szakmai háttér</p>
+        <a href="#palyafutas">Tanulmányok és pályafutás</a>
+        <a href="#tapasztalat">Műtéti tapasztalat</a>
+        <a href="#oktatas">Oktatás és tudományos munka</a>
+        <a href="#konyvek">Könyvek és publikációk</a>
+      </aside>
+      <div class="condition-content">
+        <section id="palyafutas" aria-labelledby="palyafutas-title">
+          <p class="eyebrow">Tanulmányok és klinikai munka</p>
+          <h2 id="palyafutas-title">Orvosi pálya és szakképzettség</h2>
+          <p><strong>1982-ben szerzett orvosi diplomát a budapesti Semmelweis Egyetemen.</strong> Egyetemi évei alatt kétszer nyert sebészeti tanulmányi versenyt.</p>
+          <p>Pályáját az Orvostovábbképző Egyetem Urológiai Klinikáján kezdte. 1987-ben szakvizsgázott urológiából, majd a klinikán egyetemi oktatóként is dolgozott.</p>
+          <p>2000 óta a Semmelweis Egyetem Urológiai Klinikájának munkatársa, ahol speciális műtéteket végez, és részt vesz a szexuális medicina egyetemi oktatásában.</p>
+          <p>2012-ben sikeres európai szakmai vizsgával megszerezte a <strong>FECSM</strong> (Fellow of the European Committee of Sexual Medicine) címet, amely a szexuális medicina területén szerzett szaktudását ismeri el.</p>
+        </section>
+        <section id="tapasztalat" aria-labelledby="tapasztalat-title">
+          <p class="eyebrow">Szakterület és nemzetközi tapasztalat</p>
+          <h2 id="tapasztalat-title">Több évtized a férfi urológiai sebészetben</h2>
+          <p>Fő szakterülete a férfi nemi szervek betegségei és azok műtéti kezelése. Az elmúlt évtizedekben több ezer beavatkozást végzett.</p>
+          <p>A nyolcvanas évek közepétől Magyarországon az elsők között foglalkozott a lézer alkalmazásával a péniszsebészetben. Tapasztalatairól több nemzetközi konferencián tartott előadást, és angliai, hollandiai, valamint ausztriai kórházakban vett részt tanulmányutakon.</p>
+          <p>Vendégoperatőrként számos hazai kórházba hívták meg, többek között az Uzsoki, a Szent János, a Központi Honvéd és a Délpesti kórházba. Budapesten kívül Pápán, Szentesen, Szolnokon, Szombathelyen, Debrecenben, Miskolcon, Gyulán, Sopronban és Baján is operált.</p>
+          <p>Bécsben is végzett speciális péniszműtéteket, köztük merevedési zavar kezelését célzó beavatkozásokat.</p>
+        </section>
+        <section id="oktatas" aria-labelledby="oktatas-title">
+          <p class="eyebrow">Szakmai közélet</p>
+          <h2 id="oktatas-title">Oktatás és tudományos munka</h2>
+          <p><strong>2008 és 2018 között a Magyar Szexuális Medicina Társaság elnöke volt.</strong> Hazai és nemzetközi tudományos kongresszusokon előadóként és szervezőként is részt vesz.</p>
+          <p>Egyetemi oktatói tevékenysége mellett nemzetközi tudományos folyóiratokban is jelentek meg közleményei. Szakmai tapasztalatait orvosoknak és betegeknek szóló könyvekben is megosztja.</p>
+        </section>
+        <section id="konyvek" aria-labelledby="konyvek-title">
+          <p class="eyebrow">Szerzőként és társszerzőként</p>
+          <h2 id="konyvek-title">Könyvek és publikációk</h2>
+          <p>1995-ben jelent meg <strong>Impotencia</strong> című könyve, 1999-ben pedig az <strong>Erekciós zavarok</strong> a Springer kiadónál. Társszerzője az <em>Esztétikai Plasztikai Sebészet</em>, a <em>Tabularium Urologiae</em> és az <em>Urológia mindenkinek</em> című köteteknek is.</p>
+          <div class="profile-books">
+            <figure class="profile-book">
+              <div class="profile-book-cover"><img src="/erekcios-zavarok.png" alt="Fekete Ferenc: Erekciós zavarok – könyvborító" width="225" height="300" loading="lazy" /></div>
+              <figcaption><h3>Erekciós zavarok</h3><p>Fekete Ferenc · Springer, 1999</p></figcaption>
+            </figure>
+            <figure class="profile-book">
+              <div class="profile-book-cover"><img src="/urologia-mindenkinek.png" alt="Dr. Romics Imre és Dr. Fekete Ferenc: Urológia mindenkinek – könyvborító" width="249" height="300" loading="lazy" /></div>
+              <figcaption><h3>Urológia mindenkinek</h3><p>Dr. Romics Imre – Dr. Fekete Ferenc · Springer</p></figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </div>
+    <ContactCTA />
+  </main>
+  <Footer />
+</Layout>

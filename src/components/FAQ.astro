@@ -1,58 +1,65 @@
 ---
 const faqs = [
   {
-    question: "Mik a fitymaszűkület tünetei?",
-    answer:
-      "Jellemző lehet a fityma nehéz vagy fájdalmas hátrahúzása, feszülés, berepedés, illetve visszatérő gyulladás. A pontos okot vizsgálat alapján lehet megítélni.",
-  },
-  {
-    question: "Mikor érdemes orvoshoz fordulni?",
-    answer:
-      "Ha a panasz fájdalmat, gyulladást, sérülést, tisztálkodási nehézséget vagy szexuális együttlét közbeni kellemetlenséget okoz, érdemes urológussal egyeztetni.",
+    question: "Mi történik az első vizsgálaton?",
+    paragraphs: [
+      "Átbeszéljük a panaszait és a korábbi kezeléseket, majd megvizsgáljuk a fitymát és a fitymaféket. Tisztázzuk, hogy szűkület, rövid fék vagy mindkettő okozza-e a problémát, és megbeszéljük a szóba jövő kezeléseket. További vizsgálat csak szükség esetén indokolt.",
+    ],
   },
   {
     question: "Elkerülhető a körülmetélés?",
-    answer:
-      "Ez az állapottól és a szűkület mértékétől függ. Bizonyos esetekben többféle kezelési lehetőség merülhet fel, ezekről személyes vizsgálat után lehet felelősen beszélni.",
+    paragraphs: [
+      "Nem minden fitymaszűkület igényel műtétet: enyhébb esetben orvos által felírt szteroidtartalmú krém is segíthet, bár a szűkület visszatérhet. Az erőltetett nyújtás sérülést okozhat, ezért a kezelést egyeztesse urológussal.",
+      "Ha önmagában a rövid fék okozza a panaszt, annak meghosszabbítása elegendő lehet, a fityma megtartásával. Heges szűkületnél körülmetélés is szükségessé válhat; a megfelelő megoldást a vizsgálat alapján választjuk ki.",
+    ],
   },
   {
-    question: "Fájdalmas a beavatkozás?",
-    answer:
-      "A beavatkozások fájdalomcsillapítás mellett történnek. A várható kellemetlenségről, teendőkről és kockázatokról az egyeztetés során részletes tájékoztatás adható.",
+    question: "Milyen érzéstelenítéssel történik a műtét?",
+    paragraphs: [
+      "A körülmetélés és a fékplasztika helyi érzéstelenítésben vagy altatásban is végezhető. Helyi érzéstelenítésnél ébren marad, az operált területet érzéstelenítik. Az Ön esetében alkalmazható módszert és az előkészületeket a doktorral előre egyezteti.",
+    ],
   },
   {
-    question: "Mennyi ideig tart a gyógyulás?",
-    answer:
-      "A gyógyulási idő az elvégzett beavatkozástól és az egyéni adottságoktól függ. A személyes vizsgálat során lehet pontosabb, személyre szabott tájékoztatást kapni.",
+    question: "Mikor térhetek vissza a munkához, sporthoz és nemi élethez?",
+    paragraphs: [
+      "Körülmetélés után általában körülbelül 1 hét munkakieséssel és 4–6 hét teljes gyógyulással számoljon. Sporttal, úszással, kerékpározással és nehéz emeléssel legalább 2 hetet, szexszel és önkielégítéssel legalább 4 hetet és a seb teljes gyógyulásáig várjon.",
+      "Fékplasztika után a varratok jellemzően 2–3 hét alatt szívódnak fel. Munkába a komfortérzet és a terhelés alapján térhet vissza; úszással általában 1–2 hetet várjon, kerékpározást és kontaktsportot csak panaszmentesen, a seb állapotához igazítva kezdjen újra. Nemi élettel körülbelül 4 hét szünettel és teljes sebgyógyulással tervezzen.",
+      "Fizikai munka, fájdalom vagy elhúzódó sebgyógyulás hosszabb pihenést igényelhet. Mindig a kezelőorvos egyéni útmutatása az irányadó.",
+    ],
   },
   {
-    question: "Mikor lehet újra nemi életet élni?",
-    answer:
-      "Erről mindig az adott beavatkozás és gyógyulási folyamat alapján érdemes dönteni. A kontroll és az orvosi javaslat segít meghatározni a biztonságos időpontot.",
+    question: "Mennyibe kerül a vizsgálat és a műtét?",
+    paragraphs: [
+      "Az aktuális díjakról telefonon vagy e-mailben érdeklődhet a vizsgálat előtt; az oldalon jelenleg nincs árlista. Műtét előtt tisztázza azt is, hogy az ár tartalmazza-e az érzéstelenítést, az esetleges további vizsgálatokat és a kontrollt.",
+    ],
   },
   {
-    question: "Hogyan lehet időpontot kérni?",
-    answer:
-      "Telefonon a +36 30 311 3045 számon vagy e-mailben a feketedoktor@gmail.com címen lehet kapcsolatba lépni a rendelővel.",
+    question: "Kihez fordulhatok a kezelés után?",
+    paragraphs: [
+      "E-mailben közvetlenül Dr. Fekete Ferenccel tarthatja a kapcsolatot a feketedoktor@gmail.com címen. Műtét utáni kontrollvizsgálat is lesz, ahol a gyógyulást és a felmerülő kérdéseket átbeszélhetik.",
+      "Láz, fokozódó fájdalom vagy gennyes váladékozás esetén mielőbb kérjen orvosi segítséget. Nem szűnő vérzés vagy vizelési képtelenség esetén sürgős ellátás szükséges; ne várjon e-mailes válaszra.",
+    ],
   },
 ];
 ---
 
-<section class="section" id="gyakori-kerdesek" aria-labelledby="faq-title">
+<section class="section section-soft" id="gyakori-kerdesek" aria-labelledby="faq-title">
   <div class="container faq-grid">
     <div>
       <p class="eyebrow">Tájékozódás</p>
       <h2 id="faq-title">Gyakori kérdések</h2>
-      <p class="muted">
-        Rövid, általános válaszok a leggyakoribb kérdésekre. A konkrét teendőkről
-        személyes egyeztetés alapján lehet dönteni.
+      <p>
+        A legfontosabb tudnivalók a vizsgálatról, a kezelésről és a felépülésről.
+        Általános tájékoztatás felnőtteknek; az egyéni teendőket a doktorral egyeztesse.
       </p>
+      <a class="button button-primary" href="tel:+36303113045">+36 30 311 3045</a>
+      <p class="faq-contact">Telefon: hétfő–péntek, 9:00–17:00<br /><a class="text-link" href="mailto:feketedoktor@gmail.com">E-mailt írok a doktornak →</a></p>
     </div>
     <div class="faq-list">
-      {faqs.map((faq) => (
-        <details>
+      {faqs.map((faq, index) => (
+        <details open={index === 0}>
           <summary>{faq.question}</summary>
-          <p>{faq.answer}</p>
+          {faq.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
         </details>
       ))}
     </div>

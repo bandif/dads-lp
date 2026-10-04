@@ -1,10 +1,4 @@
 ---
-const facts = [
-  { value: "1982", label: "orvosi diploma, Semmelweis Egyetem" },
-  { value: "1987", label: "urológiai szakvizsga" },
-  { value: "FECSM", label: "európai szexuális medicina szakember" },
-];
-
 const credentials = [
   "2000 óta a Semmelweis Egyetem Urológiai Klinikájának munkatársa.",
   "Fő szakterülete a férfi nemi szervek betegségei és műtéti kezelése.",
@@ -37,15 +31,7 @@ const credentials = [
       <ul class="credential-list">
         {credentials.map((credential) => <li>{credential}</li>)}
       </ul>
-      <div class="fact-grid">
-        {facts.map((fact) => (
-          <div class="fact">
-            <strong>{fact.value}</strong>
-            <span>{fact.label}</span>
-          </div>
-        ))}
-      </div>
-      <a class="button button-secondary" href="#kapcsolat">Bővebben rólam</a>
+      <a class="button button-secondary" href="/dr-fekete-ferenc/">Bővebben rólam</a>
     </div>
   </div>
 </section>
