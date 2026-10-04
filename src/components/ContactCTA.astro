@@ -38,6 +38,33 @@ const contacts = [
   </div>
 </section>
 
-<div class="mobile-contact-bar" aria-label="Gyors kapcsolatfelvétel">
+<div class="mobile-contact-bar" aria-label="Gyors kapcsolatfelvétel" hidden>
   <a href="#kapcsolat">Időpontot kérek</a>
 </div>
+
+<script>
+  const bar = document.querySelector<HTMLElement>(".mobile-contact-bar");
+  const heroButton = document.querySelector<HTMLElement>(
+    'main .hero .button-primary, main .condition-hero .button-primary, main .doctor-copy .button-primary'
+  );
+  if (bar) {
+    let scheduled = false;
+    const update = () => {
+      scheduled = false;
+      const headerBottom = document.querySelector(".site-header")?.getBoundingClientRect().bottom ?? 0;
+      // Show only after the hero CTA has passed behind the sticky header,
+      // not while it is still below the viewport on smaller screens.
+      bar.hidden = !!heroButton && heroButton.getBoundingClientRect().bottom > Math.max(0, headerBottom);
+    };
+    const schedule = () => {
+      if (scheduled) return;
+      scheduled = true;
+      requestAnimationFrame(update);
+    };
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    window.addEventListener("pageshow", schedule);
+    new ResizeObserver(schedule).observe(document.body);
+    update();
+  }
+</script>

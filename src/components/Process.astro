@@ -27,6 +27,7 @@ const steps = [
           <span>{index + 1}</span>
           <h3>{step.title}</h3>
           <p>{step.text}</p>
+          {index === 0 && <a class="button button-primary" href="#kapcsolat">Kapcsolatfelvétel</a>}
         </li>
       ))}
     </ol>
