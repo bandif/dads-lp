@@ -1,10 +1,11 @@
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
+import { runInNewContext } from 'node:vm';
 
 const config = JSON.parse(readFileSync('public/admin/config.yml', 'utf8'));
-assert.equal(config.backend.repo, 'bandif/dads-lp');
 assert.equal(config.backend.branch, 'main');
-assert.equal(config.backend.name, 'github');
+assert.equal(config.backend.name, 'git-gateway');
+assert.ok(!('repo' in config.backend));
 const normalize = value => value.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, '')
   .replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"')
   .replace(/&#(?:39|x27);/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>')
@@ -55,4 +56,18 @@ assert.deepEqual(configured, readdirSync('src/content/site').sort());
 assert.match(readFileSync('dist/admin/index.html', 'utf8'), /decap-cms@3\.16\.3/);
 assert.match(readFileSync('dist/admin/index.html', 'utf8'), /noindex/);
 assert.ok(existsSync('dist/admin/config.yml'));
+const admin = readFileSync('dist/admin/index.html', 'utf8');
+assert.ok(admin.indexOf('identity.netlify.com/v1/netlify-identity-widget.js') > -1);
+assert.ok(admin.indexOf('netlify-identity-widget.js') < admin.indexOf('decap-cms@'));
+const redirect = readFileSync('dist/identity-redirect.js', 'utf8');
+for (const token of ['invite_token', 'recovery_token', 'confirmation_token', 'email_change_token', 'access_token']) {
+  let destination;
+  const hash = `#${token}=test%2Btoken&token_type=bearer`;
+  runInNewContext(redirect, { URLSearchParams, window: { location: { hash, replace: value => { destination = value; } } } });
+  assert.equal(destination, `/admin/${hash}`, `${token}: preserve callback fragment`);
+}
+for (const hash of ['', '#kapcsolat', '#gyakori-kerdesek', '#invite_token=', '#not_invite_token=test']) {
+  runInNewContext(redirect, { URLSearchParams, window: { location: { hash, replace: () => assert.fail(`Unexpected redirect: ${hash}`) } } });
+}
+for (const html of Object.values(htmlByRoute)) assert.ok(html.includes('src="/identity-redirect.js"'));
 console.log(`CMS checks passed: ${configured.length} entries, ${checked} fields, all content and image bindings, admin output.`);

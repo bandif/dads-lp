@@ -1,7 +1,6 @@
 {
   "backend": {
-    "name": "github",
-    "repo": "bandif/dads-lp",
+    "name": "git-gateway",
     "branch": "main"
   },
   "local_backend": true,

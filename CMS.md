@@ -1,6 +1,6 @@
 # Editing the website
 
-Open **https://fitymaszukulet.hu/admin/** and sign in with GitHub.
+Open **https://fitymaszukulet.hu/admin/** and sign in with your invited email address and password. No GitHub account is needed.
 
 The editor is in Hungarian:
 
@@ -12,15 +12,15 @@ Choose a section, change its text or select/upload an image, then publish. Publi
 
 ## One-time production setup
 
-The repository configuration is ready for `bandif/dads-lp`, branch `main`. Authentication must be configured in the site owner's accounts:
+The CMS uses Netlify Identity and Git Gateway with the site's connected repository, branch `main`.
 
-1. Connect the Netlify project to this repository and production branch. The included `netlify.toml` sets `npm run build` and `dist`.
-2. In [GitHub OAuth Apps](https://github.com/settings/developers), register an application. Use `https://fitymaszukulet.hu` as the homepage and **`https://api.netlify.com/auth/done`** as the authorization callback URL.
-3. In Netlify, open **Project configuration → Security → OAuth → Authentication Providers → Install Provider**. Select GitHub and save the application's Client ID and Client Secret there. Never put the secret in this repository or the CMS configuration.
-4. Give the editor's GitHub account write access to `bandif/dads-lp`. Accept the repository invitation before logging into the CMS. The `main` branch must permit the editor's direct content commits.
-5. Deploy these changes, open `/admin/`, sign in, publish a small text change, and verify the new Git commit and successful Netlify deployment. Then restore the text if it was only a test.
+1. Connect Netlify to this repository and production branch. The included `netlify.toml` sets `npm run build` and `dist`.
+2. Enable Identity, set registration to **Invite only**, and enable **Identity → Services → Git Gateway**. The owner has completed these settings.
+3. Deploy these changes before inviting editors. The CMS loads Netlify's Identity widget. Public pages forward invitation, confirmation, and password-recovery links to `/admin/`, keeping their tokens in the URL fragment. Default Netlify email templates can stay unchanged.
+4. Under **Identity → Users → Invite users**, invite the editor's email address. They accept the invitation and set their own password. Resend expired invitations from Netlify. Forgotten passwords can be reset from the CMS login screen.
+5. Open `/admin/`, sign in, publish a small text change, and verify the Git commit and successful Netlify deployment. Restore the text if it was only a test. The production branch must permit Git Gateway's commits.
 
-No Netlify Identity or Git Gateway setup is needed. GitHub OAuth uses Netlify's hosted authentication service. See [Decap's GitHub backend](https://decapcms.org/docs/github-backend/) and [Netlify's OAuth setup](https://docs.netlify.com/manage/security/secure-access-to-sites/oauth-provider-tokens/). [Git Gateway is deprecated](https://docs.netlify.com/manage/security/secure-access-to-sites/git-gateway/).
+No GitHub OAuth app or editor repository invitation is needed. See [Decap's Identity integration](https://decapcms.org/docs/choosing-a-backend/). [Git Gateway is deprecated](https://docs.netlify.com/manage/security/secure-access-to-sites/git-gateway/); this setup uses the service the owner has chosen and enabled.
 
 ## Local editing
 
@@ -31,7 +31,7 @@ npm run dev
 npm run cms
 ```
 
-Visit `http://localhost:4321/admin/`. Decap detects its local proxy and reads/writes the local content files without a GitHub login. The proxy's first run downloads the pinned `decap-server` package. Keep the proxy local to your machine. Local saves change files; they do not push Git commits or deploy Netlify.
+Visit `http://localhost:4321/admin/`. Decap detects its local proxy and reads/writes the local content files without an Identity login. The proxy's first run downloads the pinned `decap-server` package. Keep the proxy local to your machine. Local saves change files; they do not push Git commits or deploy Netlify.
 
 ## Files and checks
 
