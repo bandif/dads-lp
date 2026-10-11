@@ -1,0 +1,80 @@
+{
+  "section1": {
+    "button1": "← Miben tudok segíteni?",
+    "eyebrow1": "Fitymaszűkület és rövid fék",
+    "heading1": "Fitymaszűkület: tünetek és kezelési lehetőségek",
+    "paragraph1": "Ha a fityma hátrahúzása vagy az együttlét feszüléssel, fájdalommal jár, annak oka fitymaszűkület vagy rövid fitymafék is lehet. Urológiai vizsgálattal tisztázható, mi okozza a panaszt, és milyen kezelés segíthet.",
+    "button2": "Időpont egyeztetés",
+    "button3": "Videó megtekintése"
+  },
+  "section2": {
+    "eyebrow1": "Ezen az oldalon",
+    "button1": "Rövid áttekintés",
+    "button2": "Tünetek és panaszok",
+    "button3": "Kezelési lehetőségek",
+    "button4": "A beavatkozás után",
+    "button5": "Videós magyarázat"
+  },
+  "attekintes": {
+    "eyebrow1": "Röviden",
+    "heading1": "Mit érdemes tudni a kezelésről?",
+    "paragraph1": "A fitymaszűkület és a rövid fitymafék különböző eltérések, ezért a kezelésük sem feltétlenül azonos. Enyhébb szűkületnél gyógyszeres kezelés, rövid féknél annak meghosszabbítása, heges szűkületnél körülmetélés jöhet szóba. A megfelelő megoldást személyes vizsgálat alapján lehet kiválasztani."
+  },
+  "tunetek": {
+    "eyebrow1": "A panaszok háttere",
+    "heading1": "Fitymaszűkület vagy rövid fék?",
+    "paragraph1": "**Fitymaszűkület esetén a fityma nyílása túl szűk**, ezért a bőr nehezen húzható hátra a makkról. A szűk rész együttlét közben szoríthat, fájdalmat okozhat, és be is repedhet.",
+    "paragraph2": "**A fitymafék a makk alsó részén húzódó kis bőrredő.** Ha túl rövid, a fityma hátrahúzásakor vagy együttlét közben megfeszülhet, fájhat, esetenként megsérülhet. A rövid fék és a fitymaszűkület külön-külön, de együtt is előfordulhat.",
+    "paragraph3": "A visszatérő berepedések hegesedéssel gyógyulhatnak, ami tovább fokozhatja a szűkületet. Ha a fityma nem húzható megfelelően hátra, a makk tisztán tartása is nehezebbé válik, és gyulladás alakulhat ki.",
+    "heading2": "Mikor van szükség sürgős ellátásra?",
+    "paragraph4": "Ha a hátrahúzott fityma a makk mögött megszorul, és nem húzható előre a makkra, **azonnal kérjen urológiai ellátást**. A kialakuló duzzanat és keringési zavar gyorsan súlyosbodhat, ezért ilyenkor ne várjon egy későbbi rendelési időpontra."
+  },
+  "kezeles": {
+    "eyebrow1": "Vizsgálat és kezelés",
+    "heading1": "Gyógyszeres kezelés, fékplasztika vagy körülmetélés?",
+    "paragraph1": "A vizsgálat során először azt tisztázzuk, hogy a panaszt a fityma szűkülete, a fék rövidsége vagy mindkettő okozza-e. A kezelés ezután az eltérés jellegéhez és súlyosságához igazodik.",
+    "paragraph2": "**Nem minden fitymaszűkület igényel műtétet.** Egyes esetekben orvos által javasolt gyógyszeres krém is segíthet. Heges szűkületnél azonban a krémes kezelés kevésbé hatékony, ezért gyakrabban van szükség beavatkozásra.",
+    "paragraph3": "A nem megfelelő krémek használata és az erőltetett nyújtás ronthat a panaszokon. A kezelést ezért érdemes urológussal egyeztetni.",
+    "heading2": "Ha műtétre van szükség",
+    "paragraph4": "A műtét nem minden esetben jelenti a teljes fityma eltávolítását. Ha önmagában a rövid fék okozza a panaszt, annak műtéti meghosszabbítása elegendő lehet. Heges fitymaszűkület esetén körülmetélésre is szükség lehet; a fitymamegtartó eljárások felnőttkorban csak válogatott esetekben megfelelőek. A vizsgálat alapján átbeszéljük, melyik megoldás jöhet szóba."
+  },
+  "felepules": {
+    "eyebrow1": "A beavatkozás után",
+    "heading1": "Mire számíthat a műtét után?",
+    "paragraph1": "A beavatkozás után fájdalom, duzzanat vagy érzékenység jelentkezhet. Ezek mértéke és időtartama a műtét típusától és az egyéni gyógyulástól függ. A kellemetlenségek általában jól kezelhetők, szükség esetén fájdalomcsillapítóval.",
+    "paragraph2": "A megfelelő utókezelés a gyógyulás fontos része. A konzultáción megbeszéljük a sebápolás teendőit, valamint azt is, mire kell figyelnie a felépülés alatt.",
+    "heading2": "Körülmetélés utáni felépülés",
+    "paragraph3": "Általában körülbelül 1 hét munkakieséssel és 4–6 hét teljes gyógyulással érdemes tervezni. Sporttal, úszással, kerékpározással és nehéz emeléssel legalább 2 hetet, szexszel és önkielégítéssel legalább 4 hetet és a teljes sebgyógyulásig várjon.",
+    "heading3": "Fékplasztika utáni felépülés",
+    "paragraph4": "A felszívódó varratok jellemzően 2–3 hét alatt tűnnek el. A munkába való visszatérést a komfortérzet és a terhelés határozza meg; nemi élettel körülbelül 4 hét szünettel és teljes sebgyógyulással tervezzen. Ha körülmetélés is történik, annak felépülési idejével számoljon.",
+    "paragraph5": "Ezek felnőtteknek szóló általános támpontok. Fizikai munka vagy elhúzódó gyógyulás hosszabb pihenést igényelhet; mindig a kezelőorvos egyéni útmutatását kövesse. Műtét után kontrollvizsgálat is lesz, és e-mailben közvetlenül a doktorhoz fordulhat.",
+    "button1": "Gyakori kérdések a kezelésről →"
+  },
+  "video": {
+    "eyebrow1": "Érthetően a kezelésről",
+    "heading1": "Videós tájékoztató",
+    "paragraph1": "Ha szívesebben hallgatná meg a tájékoztatást, nézze meg Dr. Fekete Ferenc videóját.",
+    "heading2": "A legfontosabb tudnivalók röviden",
+    "text1": "A fájdalmas hátrahúzás, feszülés és berepedés okát vizsgálat tisztázza.",
+    "text2": "Nem minden panasz igényel körülmetélést; a kezelés az eltéréshez igazodik.",
+    "text3": "A felépülés és a sebápolás az elvégzett beavatkozástól függ.",
+    "button1": "Megtekintés a YouTube-on →"
+  },
+  "editorial": {
+    "updated": "2026-10-04",
+    "sources": [
+      {
+        "name": "BAUS: fitymaszűkület",
+        "url": "https://www.baus.org.uk/patients/conditions/13/tight_foreskin_phimosis/"
+      },
+      {
+        "name": "NHS: körülmetélés és felépülés",
+        "url": "https://www.nhs.uk/tests-and-treatments/circumcision/"
+      },
+      {
+        "name": "BAUS: fékplasztika",
+        "url": "https://www.baus.org.uk/_userfiles/pages/files/Patients/Leaflets/Frenuloplasty.pdf"
+      }
+    ]
+  }
+}

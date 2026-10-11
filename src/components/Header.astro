@@ -1,18 +1,28 @@
 ---
+import copy from "../content/site/Header.json";
 import { practice } from "../data/practice";
-const navItems = [
-  { label: "Fitymaszűkület", href: "/fitymaszukulet/" },
-  { label: "Dr. Fekete Ferenc", href: "/dr-fekete-ferenc/" },
-  { label: "Gyakori kérdések", href: "/#gyakori-kerdesek" },
-  { label: "Kapcsolat", href: "#kapcsolat" },
+const navItemsLayout = [
+  {
+    "href": "/fitymaszukulet/"
+  },
+  {
+    "href": "/dr-fekete-ferenc/"
+  },
+  {
+    "href": "/#gyakori-kerdesek"
+  },
+  {
+    "href": "#kapcsolat"
+  }
 ];
+const navItems = Object.values(copy.navItems).map((item, index) => ({ ...item, ...navItemsLayout[index] }));
 ---
 
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="/" aria-label="Dr. Fekete Ferenc főoldal">
-      <span>Dr. Fekete Ferenc</span>
-      <small>Urológus szakorvos</small>
+      <span>{copy.content.text1}</span>
+      <small>{copy.content.text2}</small>
     </a>
 
     <nav class="desktop-nav" aria-label="Fő navigáció">
@@ -34,7 +44,7 @@ const navItems = [
       </summary>
       <nav aria-label="Mobil navigáció">
         {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
-        <a class="button button-primary" href="#kapcsolat">Időpont egyeztetés</a>
+        <a class="button button-primary" href="#kapcsolat">{copy.content.button1}</a>
       </nav>
     </details>
   </div>

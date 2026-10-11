@@ -1,0 +1,50 @@
+{
+  "faqs": [
+    {
+      "question": "Mi történik az első vizsgálaton?",
+      "paragraphs": [
+        "Átbeszéljük a panaszait és a korábbi kezeléseket, majd megvizsgáljuk a fitymát és a fitymaféket. Tisztázzuk, hogy szűkület, rövid fék vagy mindkettő okozza-e a problémát, és megbeszéljük a szóba jövő kezeléseket. További vizsgálat csak szükség esetén indokolt."
+      ]
+    },
+    {
+      "question": "Elkerülhető a körülmetélés?",
+      "paragraphs": [
+        "Nem minden fitymaszűkület igényel műtétet: enyhébb esetben orvos által felírt szteroidtartalmú krém is segíthet, bár a szűkület visszatérhet. Az erőltetett nyújtás sérülést okozhat, ezért a kezelést egyeztesse urológussal.",
+        "Ha önmagában a rövid fék okozza a panaszt, annak meghosszabbítása elegendő lehet, a fityma megtartásával. Heges szűkületnél körülmetélés is szükségessé válhat; a megfelelő megoldást a vizsgálat alapján választjuk ki."
+      ]
+    },
+    {
+      "question": "Milyen érzéstelenítéssel történik a műtét?",
+      "paragraphs": [
+        "A körülmetélés és a fékplasztika helyi érzéstelenítésben vagy altatásban is végezhető. Helyi érzéstelenítésnél ébren marad, az operált területet érzéstelenítik. Az Ön esetében alkalmazható módszert és az előkészületeket a doktorral előre egyezteti."
+      ]
+    },
+    {
+      "question": "Mikor térhetek vissza a munkához, sporthoz és nemi élethez?",
+      "paragraphs": [
+        "Körülmetélés után általában körülbelül 1 hét munkakieséssel és 4–6 hét teljes gyógyulással számoljon. Sporttal, úszással, kerékpározással és nehéz emeléssel legalább 2 hetet, szexszel és önkielégítéssel legalább 4 hetet és a seb teljes gyógyulásáig várjon.",
+        "Fékplasztika után a varratok jellemzően 2–3 hét alatt szívódnak fel. Munkába a komfortérzet és a terhelés alapján térhet vissza; úszással általában 1–2 hetet várjon, kerékpározást és kontaktsportot csak panaszmentesen, a seb állapotához igazítva kezdjen újra. Nemi élettel körülbelül 4 hét szünettel és teljes sebgyógyulással tervezzen.",
+        "Fizikai munka, fájdalom vagy elhúzódó sebgyógyulás hosszabb pihenést igényelhet. Mindig a kezelőorvos egyéni útmutatása az irányadó."
+      ]
+    },
+    {
+      "question": "Mennyibe kerül a vizsgálat és a műtét?",
+      "paragraphs": [
+        "Az aktuális díjakról telefonon vagy e-mailben érdeklődhet a vizsgálat előtt; az oldalon jelenleg nincs árlista. Műtét előtt tisztázza azt is, hogy az ár tartalmazza-e az érzéstelenítést, az esetleges további vizsgálatokat és a kontrollt."
+      ]
+    },
+    {
+      "question": "Kihez fordulhatok a kezelés után?",
+      "paragraphs": [
+        "E-mailben közvetlenül Dr. Fekete Ferenccel tarthatja a kapcsolatot a feketedoktor@gmail.com címen. Műtét utáni kontrollvizsgálat is lesz, ahol a gyógyulást és a felmerülő kérdéseket átbeszélhetik.",
+        "Láz, fokozódó fájdalom vagy gennyes váladékozás esetén mielőbb kérjen orvosi segítséget. Nem szűnő vérzés vagy vizelési képtelenség esetén sürgős ellátás szükséges; ne várjon e-mailes válaszra."
+      ]
+    }
+  ],
+  "gyakori_kerdesek": {
+    "eyebrow1": "Tájékozódás",
+    "heading1": "Gyakori kérdések",
+    "paragraph1": "A legfontosabb tudnivalók a vizsgálatról, a kezelésről és a felépülésről. Általános tájékoztatás felnőtteknek; az egyéni teendőket a doktorral egyeztesse.",
+    "button1": "Időpontot kérek"
+  }
+}

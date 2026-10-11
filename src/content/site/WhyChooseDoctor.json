@@ -1,0 +1,25 @@
+{
+  "reasons": {
+    "item1": {
+      "title": "Diszkrét, négyszemközti ellátás",
+      "text": "A vizsgálat, a panaszok megbeszélése és a kezelés négyszemközt zajlik. Intim problémáival figyelmes, személyes környezetben fordulhat hozzám."
+    },
+    "item2": {
+      "title": "Közvetlen kapcsolat, a kezelés után is",
+      "text": "E-mailben személyesen válaszolok a kérdéseire a kezelés előtt és után is. A felépülést sebápolási útmutatás és kontrollvizsgálat segíti."
+    },
+    "item3": {
+      "title": "Kevesebb külön látogatás",
+      "text": "Ha előre egyeztetünk, a rövid fitymafék műtétjére vagy a papulák eltávolítására akár már az első alkalommal sor kerülhet. Erről a vizsgálat alapján döntünk."
+    },
+    "item4": {
+      "title": "Az Ön adottságaihoz igazított kezelés",
+      "text": "A megoldást az Ön állapotához igazítom. Előre átbeszéljük, milyen működésbeli és esztétikai eredmény várható reálisan."
+    }
+  },
+  "miert_valasszon": {
+    "eyebrow1": "Személyes figyelem, minden lépésnél",
+    "heading1": "Miért válasszon engem?",
+    "paragraph1": "A szakmai tapasztalat mellett az is fontos, hogyan érzi magát a vizsgálattól a felépülésig."
+  }
+}

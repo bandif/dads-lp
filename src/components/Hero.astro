@@ -1,30 +1,30 @@
+---
+import reviews from "../content/site/Testimonials.json";
+import copy from "../content/site/Hero.json";
+import { inlineText } from "../data/inline-text";
+---
 <section class="hero">
   <div class="container hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow">Dr. Fekete Ferenc • urológus szakorvos</p>
-      <h1>Urológiai magánrendelés Budapesten</h1>
-      <p class="hero-lead">
-        Dr. Fekete Ferenc urológus szakorvos <strong>több mint 30 éves műtéti
-        tapasztalattal</strong> segít a fitymaszűkülettel és rövid fitymafékkel
-        kapcsolatos panaszok kezelésében. A vizsgálaton érthetően átbeszéljük,
-        milyen megoldás jöhet szóba az Ön esetében.
-      </p>
+      <p class="eyebrow">{copy.section1.eyebrow1}</p>
+      <h1>{copy.section1.heading1}</h1>
+      <p class="hero-lead"><Fragment set:html={inlineText(copy.section1.paragraph1)} /></p>
       <div class="hero-actions">
-        <a class="button button-primary" href="#kapcsolat">Időpontot kérek</a>
+        <a class="button button-primary" href="#kapcsolat">{copy.section1.button1}</a>
       </div>
-      <a class="hero-review-link" href="#velemenyek" aria-label="5,0 az 5-ből, 34 Google-értékelés. Pácienseim visszajelzései">
+      <a class="hero-review-link" href="#velemenyek" aria-label={`${reviews.rating.score}${reviews.rating.scale}, ${reviews.rating.shortLabel}`}>
         <span class="review-stars" aria-hidden="true">★★★★★</span>
-        <span><strong>5,0</strong> · 34 Google-értékelés</span>
+        <span><strong>{reviews.rating.score}</strong> · {reviews.rating.shortLabel}</span>
       </a>
     </div>
 
     <div class="hero-visual" aria-label="Dr. Fekete Ferenc rendelői környezetben">
       <div class="hero-photo">
         <img
-          src="/hero-dr-fekete-ferenc.jpg"
+          src={copy.section1.image1}
           alt="Dr. Fekete Ferenc urológus szakorvos rendelői környezetben"
-          width="2944"
-          height="2208"
+          width="1239"
+          height="772"
           loading="eager"
         />
       </div>

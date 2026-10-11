@@ -1,22 +1,30 @@
 ---
-const problems = [
-  { title: "Fitymaszűkület, rövid fék", href: "/fitymaszukulet/", text: "Feszülés, fájdalom, nehéz hátrahúzhatóság vagy visszatérő sérülések esetén: a panaszok kivizsgálása és személyre szabott kezelése." },
-  { title: "Papulák a makk peremén", href: "/papulak/", text: "A makk peremén megjelenő apró kiemelkedések vizsgálata és a kezelési lehetőségek átbeszélése." },
-  { title: "Péniszgörbület", href: "/peniszgorbulet/", text: "A nemi életet zavaró görbület kivizsgálása és az egyéni panaszokhoz igazodó kezelési lehetőségek." },
+import copy from "../content/site/ProblemCards.json";
+const problemsLayout = [
+  {
+    "href": "/fitymaszukulet/"
+  },
+  {
+    "href": "/papulak/"
+  },
+  {
+    "href": "/peniszgorbulet/"
+  }
 ];
+const problems = Object.values(copy.problems).map((item, index) => ({ ...item, ...problemsLayout[index] }));
 ---
 <section class="section" aria-labelledby="problemak-title">
   <div class="container">
     <div class="section-heading">
-      <p class="eyebrow">Panaszok és kezelési területek</p>
-      <h2 id="problemak-title">Miben tudok segíteni?</h2>
+      <p class="eyebrow">{copy.section1.eyebrow1}</p>
+      <h2 id="problemak-title">{copy.section1.heading1}</h2>
     </div>
     <div class="card-grid">
       {problems.map((problem) => (
         <article class="problem-card">
           <h3>{problem.title}</h3>
           <p>{problem.text}</p>
-          <a class="button button-secondary" href={problem.href} aria-label={`${problem.title}: részletek`}>Tovább <span aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href={problem.href} aria-label={`${problem.title}: részletek`}>{copy.section1.text1} <span aria-hidden="true">→</span></a>
         </article>
       ))}
     </div>

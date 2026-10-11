@@ -1,0 +1,27 @@
+{
+  "reviews": [
+    {
+      "name": "Gábor",
+      "text": "Dr. Fekete Ferenc rendkívül kedves, gyors és felkészült szakember. Mindenről érthetően tájékoztatott, türelmesen válaszolt a kérdéseimre, végig megnyugtató és empatikus hozzáállást tanúsított. Csak ajánlani tudom! Köszönöm mégegyszer!"
+    },
+    {
+      "name": "György",
+      "text": "Nagyon örülök, hogy Őrá bíztam a problémám megoldását. Profi a szakterületén és bármikor újra rábíznám magamat. Köszönöm Doktor úr!"
+    },
+    {
+      "name": "János",
+      "text": "Hihetetlen rutin és professzionalizmus mellett a Doktor úr betegközpontú, minden tájékoztatást megkaptam az operáció előtt és után is. A beavatkozás eredménye pedig tökéletes lett. A kellemes hangulatú rendelő és a személyes kapcsolattartás lehetősége pedig csak plus"
+    }
+  ],
+  "velemenyek": {
+    "eyebrow1": "Google-értékelések",
+    "heading1": "Pácienseim visszajelzései",
+    "text1": "Vélemények a Google-on",
+    "paragraph1": "34 Google-értékelés alapján"
+  },
+  "rating": {
+    "score": "5,0",
+    "scale": " / 5",
+    "shortLabel": "34 Google-értékelés"
+  }
+}

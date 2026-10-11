@@ -1,0 +1,18 @@
+{
+  "kapcsolat": {
+    "eyebrow1": "Kapcsolat",
+    "heading1": "Kérjen időpontot",
+    "paragraph1": "Ha fitymaszűkülettel, rövid fékkel vagy kapcsolódó problémával kapcsolatban szeretne segítséget kérni, keressen bizalommal.",
+    "text1": "Telefonálok",
+    "text2": "E-mailt írok",
+    "text3": "Rendelés:"
+  },
+  "content": {
+    "button1": "Időpontot kérek"
+  },
+  "labels": {
+    "phone": "Telefon",
+    "email": "E-mail",
+    "address": "Rendelő"
+  }
+}

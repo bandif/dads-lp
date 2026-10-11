@@ -1,0 +1,51 @@
+{
+  "section1": {
+    "image1": "/dr-fekete-ferenc-mutoben.jpg",
+    "button1": "← Vissza a főoldalra",
+    "eyebrow1": "Szakmai bemutatkozás",
+    "heading1": "Dr. Fekete Ferenc",
+    "paragraph1": "Urológus szakorvos · FECSM",
+    "paragraph2": "Fő szakterülete a férfi nemi szervek betegségeinek kivizsgálása és műtéti kezelése. Több évtizedes klinikai tapasztalata mellett egyetemi oktatással és szakmai könyvek írásával is foglalkozik.",
+    "button2": "Időpont egyeztetés"
+  },
+  "section2": {
+    "eyebrow1": "Szakmai háttér",
+    "button1": "Tanulmányok és pályafutás",
+    "button2": "Műtéti tapasztalat",
+    "button3": "Oktatás és tudományos munka",
+    "button4": "Könyvek és publikációk"
+  },
+  "palyafutas": {
+    "eyebrow1": "Tanulmányok és klinikai munka",
+    "heading1": "Orvosi pálya és szakképzettség",
+    "paragraph1": "**1982-ben szerzett orvosi diplomát a budapesti Semmelweis Egyetemen.** Egyetemi évei alatt kétszer nyert sebészeti tanulmányi versenyt.",
+    "paragraph2": "Pályáját az Orvostovábbképző Egyetem Urológiai Klinikáján kezdte. 1987-ben szakvizsgázott urológiából, majd a klinikán egyetemi oktatóként is dolgozott.",
+    "paragraph3": "2000 óta a Semmelweis Egyetem Urológiai Klinikájának munkatársa, ahol speciális műtéteket végez, és részt vesz a szexuális medicina egyetemi oktatásában.",
+    "paragraph4": "2012-ben sikeres európai szakmai vizsgával megszerezte a **FECSM** (Fellow of the European Committee of Sexual Medicine) címet, amely a szexuális medicina területén szerzett szaktudását ismeri el."
+  },
+  "tapasztalat": {
+    "eyebrow1": "Szakterület és nemzetközi tapasztalat",
+    "heading1": "Több évtized a férfi urológiai sebészetben",
+    "paragraph1": "Fő szakterülete a férfi nemi szervek betegségei és azok műtéti kezelése. Az elmúlt évtizedekben több ezer beavatkozást végzett.",
+    "paragraph2": "A nyolcvanas évek közepétől Magyarországon az elsők között foglalkozott a lézer alkalmazásával a péniszsebészetben. Tapasztalatairól több nemzetközi konferencián tartott előadást, és angliai, hollandiai, valamint ausztriai kórházakban vett részt tanulmányutakon.",
+    "paragraph3": "Vendégoperatőrként számos hazai kórházba hívták meg, többek között az Uzsoki, a Szent János, a Központi Honvéd és a Délpesti kórházba. Budapesten kívül Pápán, Szentesen, Szolnokon, Szombathelyen, Debrecenben, Miskolcon, Gyulán, Sopronban és Baján is operált.",
+    "paragraph4": "Bécsben is végzett speciális péniszműtéteket, köztük merevedési zavar kezelését célzó beavatkozásokat."
+  },
+  "oktatas": {
+    "eyebrow1": "Szakmai közélet",
+    "heading1": "Oktatás és tudományos munka",
+    "paragraph1": "**2008 és 2018 között a Magyar Szexuális Medicina Társaság elnöke volt.** Hazai és nemzetközi tudományos kongresszusokon előadóként és szervezőként is részt vesz.",
+    "paragraph2": "Egyetemi oktatói tevékenysége mellett nemzetközi tudományos folyóiratokban is jelentek meg közleményei. Szakmai tapasztalatait orvosoknak és betegeknek szóló könyvekben is megosztja."
+  },
+  "konyvek": {
+    "eyebrow1": "Szerzőként és társszerzőként",
+    "heading1": "Könyvek és publikációk",
+    "paragraph1": "1995-ben jelent meg **Impotencia** című könyve, 1999-ben pedig az **Erekciós zavarok** a Springer kiadónál. Társszerzője az *Esztétikai Plasztikai Sebészet*, a *Tabularium Urologiae* és az *Urológia mindenkinek* című köteteknek is.",
+    "image1": "/erekcios-zavarok.png",
+    "heading2": "Erekciós zavarok",
+    "paragraph2": "Fekete Ferenc · Springer, 1999",
+    "image2": "/urologia-mindenkinek.png",
+    "heading3": "Urológia mindenkinek",
+    "paragraph3": "Dr. Romics Imre – Dr. Fekete Ferenc · Springer"
+  }
+}

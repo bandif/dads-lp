@@ -5,7 +5,7 @@ const pages = import.meta.glob("./**/*.astro");
 export const GET: APIRoute = ({ site }) => {
   if (!site) throw new Error("A production site URL is required for the sitemap.");
   const urls = Object.keys(pages)
-    .filter(path => !path.includes("[") && !/\/(404|500)\.astro$/.test(path))
+    .filter(path => !path.startsWith("./admin/") && !path.includes("[") && !/\/(404|500)\.astro$/.test(path))
     .map(path => path.replace(/^\.\//, "").replace(/\.astro$/, "").replace(/(^|\/)index$/, "$1"))
     .map(path => new URL(path ? `/${path.replace(/\/$/, "")}/` : "/", site).href)
     .sort();

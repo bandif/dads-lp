@@ -1,31 +1,29 @@
 ---
+import copy from "../content/site/ContactCTA.json";
 import { practice } from "../data/practice";
 const contacts = [
-  { label: "Telefon", value: practice.phone, href: practice.phoneHref },
-  { label: "E-mail", value: practice.email, href: `mailto:${practice.email}` },
-  { label: "Rendelő", value: practice.address, href: practice.mapUrl },
+  { label: copy.labels.phone, value: practice.phone, href: practice.phoneHref },
+  { label: copy.labels.email, value: practice.email, href: `mailto:${practice.email}` },
+  { label: copy.labels.address, value: practice.address, href: practice.mapUrl },
 ];
 ---
 
 <section class="section contact-section" id="kapcsolat" aria-labelledby="contact-title">
   <div class="container contact-panel">
     <div>
-      <p class="eyebrow">Kapcsolat</p>
-      <h2 id="contact-title">Kérjen időpontot</h2>
-      <p>
-        Ha fitymaszűkülettel, rövid fékkel vagy kapcsolódó problémával kapcsolatban
-        szeretne segítséget kérni, keressen bizalommal.
-      </p>
+      <p class="eyebrow">{copy.kapcsolat.eyebrow1}</p>
+      <h2 id="contact-title">{copy.kapcsolat.heading1}</h2>
+      <p>{copy.kapcsolat.paragraph1}</p>
       <div class="contact-actions">
         <a class="button button-primary" href={practice.phoneHref}><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.35 1.9.69 2.79a2 2 0 0 1-.45 2.11L8.09 9.89a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.89.34 1.83.57 2.79.69A2 2 0 0 1 22 16.92z" />
-    </svg>Telefonálok</a>
+    </svg>{copy.kapcsolat.text1}</a>
         <a class="button button-light" href={`mailto:${practice.email}`}> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <rect x="3" y="5" width="18" height="14" rx="2" />
       <path d="m3 6 9 7 9-7" />
-    </svg>E-mailt írok</a>
+    </svg>{copy.kapcsolat.text2}</a>
       </div>
-      <p class="contact-hours">Rendelés: {practice.officeHours}.</p>
+      <p class="contact-hours">{copy.kapcsolat.text3} {practice.officeHours}.</p>
     </div>
     <address class="contact-list">
       {contacts.map((contact) => (
@@ -39,7 +37,7 @@ const contacts = [
 </section>
 
 <div class="mobile-contact-bar" aria-label="Gyors kapcsolatfelvétel" hidden>
-  <a href="#kapcsolat">Időpontot kérek</a>
+  <a href="#kapcsolat">{copy.content.button1}</a>
 </div>
 
 <script>

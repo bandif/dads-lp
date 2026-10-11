@@ -1,25 +1,13 @@
 ---
-const steps = [
-  {
-    title: "Vegye fel velem a kapcsolatot",
-    text: "Telefonon vagy e-mailben.",
-  },
-  {
-    title: "Rövid egyeztetés",
-    text: "Megbeszéljük a panaszt és a következő lépést.",
-  },
-  {
-    title: "Személyes vizsgálat",
-    text: "Vizsgálat és szükség esetén a kezelési lehetőségek megbeszélése a budapesti rendelőben.",
-  },
-];
+import copy from "../content/site/Process.json";
+const steps = copy.steps;
 ---
 
 <section class="section" aria-labelledby="process-title">
   <div class="container">
     <div class="section-heading">
-      <p class="eyebrow">Egyszerű kapcsolatfelvétel</p>
-      <h2 id="process-title">Hogyan kérhet időpontot?</h2>
+      <p class="eyebrow">{copy.section1.eyebrow1}</p>
+      <h2 id="process-title">{copy.section1.heading1}</h2>
     </div>
     <ol class="process-grid">
       {steps.map((step, index) => (
@@ -27,7 +15,7 @@ const steps = [
           <span>{index + 1}</span>
           <h3>{step.title}</h3>
           <p>{step.text}</p>
-          {index === 0 && <a class="button button-primary" href="#kapcsolat">Kapcsolatfelvétel</a>}
+          {index === 0 && <a class="button button-primary" href="#kapcsolat">{copy.section1.button1}</a>}
         </li>
       ))}
     </ol>

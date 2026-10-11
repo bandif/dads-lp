@@ -29,7 +29,10 @@ for (const route of routes) {
   assert.equal(doctor.url, `${root}/dr-fekete-ferenc/`);
   assert.equal(practice['@id'], `${root}/#practice`);
   assert.equal(practice.url, `${root}/`);
-  assert.equal(practice.openingHoursSpecification.length, 2);
+  const details = JSON.parse(readFileSync('src/content/site/practice.json', 'utf8'));
+  assert.equal(practice.address, details.address);
+  assert.equal(practice.telephone, details.phone);
+  assert.equal(practice.email, details.email);
   const checkRefs = value => {
     if (!value || typeof value !== 'object') return;
     if (value['@id']) assert.ok(ids.has(value['@id']), `Unresolved schema reference: ${value['@id']}`);

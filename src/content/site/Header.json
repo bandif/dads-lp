@@ -1,0 +1,21 @@
+{
+  "navItems": {
+    "item1": {
+      "label": "Fitymaszűkület"
+    },
+    "item2": {
+      "label": "Dr. Fekete Ferenc"
+    },
+    "item3": {
+      "label": "Gyakori kérdések"
+    },
+    "item4": {
+      "label": "Kapcsolat"
+    }
+  },
+  "content": {
+    "text1": "Dr. Fekete Ferenc",
+    "text2": "Urológus szakorvos",
+    "button1": "Időpont egyeztetés"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "section1": {
+    "button1": "← Miben tudok segíteni?",
+    "eyebrow1": "Papulák a makk peremén",
+    "heading1": "Gyöngyházfényű papulák: felismerés és eltávolítás",
+    "paragraph1": "A makk szélén megjelenő apró papulák sokakban keltenek bizonytalanságot. Ezek a papulák ártalmatlan anatómiai változatot jelentenek, de ha a megjelenése zavarja, személyes vizsgálaton átbeszélhetjük az eltávolítás lehetőségeit.",
+    "button2": "Időpont egyeztetés",
+    "button3": "Videó megtekintése"
+  },
+  "section2": {
+    "eyebrow1": "Ezen az oldalon",
+    "button1": "Rövid áttekintés",
+    "button2": "Mik azok a papulák?",
+    "button3": "Kezelési lehetőségek",
+    "button4": "A beavatkozás menete",
+    "button5": "Gyógyulás és teendők",
+    "button6": "Videós magyarázat"
+  },
+  "attekintes": {
+    "eyebrow1": "Röviden",
+    "heading1": "Mit érdemes tudni a kezelésről?",
+    "paragraph1": "A gyöngyházfényű papulák a makk peremén megjelenő, ártalmatlan és nem fertőző kiemelkedések. Önmagukban nem igényelnek kezelést. Ha a megjelenésük zavarja, vizsgálat után választható az eltávolítás; előbb fontos elkülöníteni őket más elváltozásoktól."
+  },
+  "papulak": {
+    "eyebrow1": "Amit érdemes tudni",
+    "heading1": "Mik azok a papulák?",
+    "paragraph1": "A gyöngyházfényű papulák apró, bőrszínű vagy fehéres kiemelkedések, amelyek jellemzően a makk peremén, egy vagy több sorban helyezkednek el.",
+    "heading2": "Ártalmatlan, nem fertőző elváltozás",
+    "paragraph2": "**Ezek a papulák nem nemi betegség jelei, és nem vírusos szemölcsök.** Nem fertőzőek, és nem a nem megfelelő tisztálkodás következményei. Önmagukban nem igényelnek kezelést.",
+    "paragraph3": "Mivel más elváltozások is hasonlíthatnak rá, a biztos megítéléshez személyes vizsgálat szükséges. Ennek során tisztázzuk, valóban papulákról van-e szó."
+  },
+  "kezeles": {
+    "eyebrow1": "Közös döntés a kezelésről",
+    "heading1": "Mikor jöhet szóba az eltávolítás?",
+    "paragraph1": "Ha a papulák megjelenése zavarja, vagy bizonytalanságot okoz az intim együttlétek során, érdemes átbeszélni a kezelési lehetőségeket. **Az eltávolítás választható beavatkozás**: a döntés előtt megbeszéljük a várható eredményt és a lehetséges kockázatokat.",
+    "paragraph2": "A rendelőben speciális sebészeti készülékkel végzem a papulák eltávolítását. Krémektől, kenőcsöktől nem várható az eltűnésük; otthoni szemölcsirtóval vagy más maró szerrel ne próbálja kezelni őket.",
+    "paragraph3": "A cél a zavaró kiemelkedések eltávolítása. Előfordulhat, hogy néhány apró papula megmarad, és később rövid kiegészítő kezelésre van szükség. Az egyéni eredmény és a gyógyulás eltérhet; a lehetséges kockázatok közé tartozik a hegesedés is."
+  },
+  "beavatkozas": {
+    "eyebrow1": "Diszkrét, személyes ellátás",
+    "heading1": "Hogyan zajlik a beavatkozás?",
+    "paragraph1": "A konzultációt, a vizsgálatot és a kezelést négyszemközt végzem. Először megvizsgálom az elváltozást, majd átbeszéljük az eljárást és a felmerülő kérdéseket.",
+    "paragraph2": "A beavatkozás érzéstelenítéssel történik. Az érzéstelenítés beadása kellemetlen lehet; célja, hogy a kezelés alatt a fájdalom a lehető legkisebb legyen. Az érzékenység és a kezelés utáni panaszok egyénenként változhatnak.",
+    "paragraph3": "**Előzetes egyeztetéssel a vizsgálat és a kezelés egy alkalommal is történhet**, ha a vizsgálat alapján a beavatkozás elvégezhető. Rövid megfigyelés után haza lehet menni.",
+    "paragraph4": "A pénisz szárán vagy a herezacskón látható kiemelkedések nem feltétlenül azonosak a makk peremén lévő papulákkal. Ezek eltávolítását külön mérlegeljük, és csak indokolt esetben javaslom."
+  },
+  "gyogyulas": {
+    "eyebrow1": "A kezelés után",
+    "heading1": "Gyógyulás és mindennapi teendők",
+    "paragraph1": "A beavatkozás napján pihenés javasolt. A munkába való visszatérés gyakran már másnap lehetséges, de ez a munka jellegétől és az egyéni állapottól is függ.",
+    "paragraph2": "**A gyógyulás általában 2–3 hetet vesz igénybe.** A nemi élettel és az uszodával a teljes gyógyulásig, illetve az orvosi jóváhagyásig várni kell.",
+    "paragraph3": "A zuhanyozásról, a tisztálkodásról és a sebápolásról a kezelés után pontos útmutatást adok. Ezek betartása segíti a zavartalan gyógyulást."
+  },
+  "video": {
+    "eyebrow1": "Dr. Fekete Ferenc tájékoztatója",
+    "heading1": "Papulák: tudnivalók videón",
+    "paragraph1": "Ha szívesebben hallgatná meg a tájékoztatást, nézze meg Dr. Fekete Ferenc videóját.",
+    "heading2": "A legfontosabb tudnivalók röviden",
+    "text1": "A gyöngyházfényű papulák nem nemi betegség vagy hiányos tisztálkodás jelei.",
+    "text2": "Az eltávolítás választható, érzéstelenítéssel végzett beavatkozás.",
+    "text3": "A sebápolás és a teljes gyógyulás kivárása a kezelés fontos része.",
+    "button1": "Megtekintés a YouTube-on →"
+  },
+  "editorial": {
+    "updated": "2026-10-04",
+    "sources": [
+      {
+        "name": "DermNet: gyöngyházfényű papulák",
+        "url": "https://dermnetnz.org/topics/pearly-penile-papules"
+      }
+    ]
+  }
+}

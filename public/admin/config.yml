@@ -1,0 +1,2185 @@
+{
+  "backend": {
+    "name": "github",
+    "repo": "bandif/dads-lp",
+    "branch": "main"
+  },
+  "local_backend": true,
+  "locale": "hu",
+  "media_folder": "public/uploads",
+  "public_folder": "/uploads",
+  "site_url": "https://fitymaszukulet.hu",
+  "display_url": "https://fitymaszukulet.hu",
+  "publish_mode": "simple",
+  "editor": {
+    "preview": false
+  },
+  "collections": [
+    {
+      "name": "home",
+      "label": "Főoldal",
+      "files": [
+        {
+          "name": "Hero",
+          "label": "Nyitó szakasz",
+          "file": "src/content/site/Hero.json",
+          "fields": [
+            {
+              "name": "section1",
+              "label": "Urológiai magánrendelés Budapesten",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "markdown",
+                  "buttons": [
+                    "bold",
+                    "italic"
+                  ],
+                  "editor_components": [],
+                  "modes": [
+                    "rich_text"
+                  ]
+                },
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "image1",
+                  "label": "Kép 1",
+                  "widget": "image"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ProblemCards",
+          "label": "Kezelési területek",
+          "file": "src/content/site/ProblemCards.json",
+          "fields": [
+            {
+              "name": "problems",
+              "label": "Kezelési kártyák",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "item1",
+                  "label": "Fitymaszűkület, rövid fék",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Cím",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "text",
+                      "label": "Szöveg",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "item2",
+                  "label": "Papulák a makk peremén",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Cím",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "text",
+                      "label": "Szöveg",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "item3",
+                  "label": "Péniszgörbület",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Cím",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "text",
+                      "label": "Szöveg",
+                      "widget": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "section1",
+              "label": "Miben tudok segíteni?",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "text1",
+                  "label": "Felirat 1",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Testimonials",
+          "label": "Páciensek véleményei",
+          "file": "src/content/site/Testimonials.json",
+          "fields": [
+            {
+              "name": "reviews",
+              "label": "Vélemények",
+              "widget": "list",
+              "collapsed": true,
+              "min": 3,
+              "max": 3,
+              "allow_add": false,
+              "summary": "{{fields.name}}",
+              "fields": [
+                {
+                  "name": "name",
+                  "label": "Név",
+                  "widget": "string"
+                },
+                {
+                  "name": "text",
+                  "label": "Szöveg",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "velemenyek",
+              "label": "Pácienseim visszajelzései",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "text1",
+                  "label": "Felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "rating",
+              "label": "Google-értékelés összesítése",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "score",
+                  "label": "Pontszám",
+                  "widget": "string"
+                },
+                {
+                  "name": "scale",
+                  "label": "Pontszám után",
+                  "widget": "string"
+                },
+                {
+                  "name": "shortLabel",
+                  "label": "Rövid felirat a főoldal tetején",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AboutDoctor",
+          "label": "Bemutatkozás",
+          "file": "src/content/site/AboutDoctor.json",
+          "fields": [
+            {
+              "name": "credentials",
+              "label": "Szakmai háttér",
+              "widget": "list",
+              "collapsed": true,
+              "field": {
+                "name": "value",
+                "label": "Szöveg",
+                "widget": "text"
+              }
+            },
+            {
+              "name": "orvos",
+              "label": "Dr. Fekete Ferenc",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "image1",
+                  "label": "Kép 1",
+                  "widget": "image"
+                },
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph2",
+                  "label": "Bekezdés 2",
+                  "widget": "text"
+                },
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "WhyChooseDoctor",
+          "label": "Miért válasszon engem?",
+          "file": "src/content/site/WhyChooseDoctor.json",
+          "fields": [
+            {
+              "name": "reasons",
+              "label": "Előnyök",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "item1",
+                  "label": "Diszkrét, négyszemközti ellátás",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Cím",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "text",
+                      "label": "Szöveg",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "item2",
+                  "label": "Közvetlen kapcsolat, a kezelés után is",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Cím",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "text",
+                      "label": "Szöveg",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "item3",
+                  "label": "Kevesebb külön látogatás",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Cím",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "text",
+                      "label": "Szöveg",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "item4",
+                  "label": "Az Ön adottságaihoz igazított kezelés",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Cím",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "text",
+                      "label": "Szöveg",
+                      "widget": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "miert_valasszon",
+              "label": "Miért válasszon engem?",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Process",
+          "label": "Időpontkérés lépései",
+          "file": "src/content/site/Process.json",
+          "fields": [
+            {
+              "name": "steps",
+              "label": "Lépések",
+              "widget": "list",
+              "collapsed": true,
+              "summary": "{{fields.title}}",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Cím",
+                  "widget": "string"
+                },
+                {
+                  "name": "text",
+                  "label": "Szöveg",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "section1",
+              "label": "Hogyan kérhet időpontot?",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "FAQ",
+          "label": "Gyakori kérdések",
+          "file": "src/content/site/FAQ.json",
+          "fields": [
+            {
+              "name": "faqs",
+              "label": "Kérdések és válaszok",
+              "widget": "list",
+              "collapsed": true,
+              "summary": "{{fields.question}}",
+              "fields": [
+                {
+                  "name": "question",
+                  "label": "Kérdés",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraphs",
+                  "label": "Válasz bekezdései",
+                  "widget": "list",
+                  "min": 1,
+                  "field": {
+                    "name": "value",
+                    "label": "Bekezdés",
+                    "widget": "text"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "gyakori_kerdesek",
+              "label": "Gyakori kérdések",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                },
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pages",
+      "label": "Aloldalak",
+      "files": [
+        {
+          "name": "dr-fekete-ferenc",
+          "label": "Szakmai bemutatkozás",
+          "file": "src/content/site/dr-fekete-ferenc.json",
+          "fields": [
+            {
+              "name": "section1",
+              "label": "Dr. Fekete Ferenc",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "image1",
+                  "label": "Kép 1",
+                  "widget": "image"
+                },
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph2",
+                  "label": "Bekezdés 2",
+                  "widget": "text"
+                },
+                {
+                  "name": "button2",
+                  "label": "Gomb / hivatkozás felirata 2",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "section2",
+              "label": "Oldalsó menü",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "button2",
+                  "label": "Gomb / hivatkozás felirata 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "button3",
+                  "label": "Gomb / hivatkozás felirata 3",
+                  "widget": "string"
+                },
+                {
+                  "name": "button4",
+                  "label": "Gomb / hivatkozás felirata 4",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "palyafutas",
+              "label": "Orvosi pálya és szakképzettség",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "markdown",
+                  "buttons": [
+                    "bold",
+                    "italic"
+                  ],
+                  "editor_components": [],
+                  "modes": [
+                    "rich_text"
+                  ]
+                },
+                {
+                  "name": "paragraph2",
+                  "label": "Bekezdés 2",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraph3",
+                  "label": "Bekezdés 3",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraph4",
+                  "label": "Bekezdés 4",
+                  "widget": "markdown",
+                  "buttons": [
+                    "bold",
+                    "italic"
+                  ],
+                  "editor_components": [],
+                  "modes": [
+                    "rich_text"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "tapasztalat",
+              "label": "Több évtized a férfi urológiai sebészetben",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraph2",
+                  "label": "Bekezdés 2",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraph3",
+                  "label": "Bekezdés 3",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraph4",
+                  "label": "Bekezdés 4",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "oktatas",
+              "label": "Oktatás és tudományos munka",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "markdown",
+                  "buttons": [
+                    "bold",
+                    "italic"
+                  ],
+                  "editor_components": [],
+                  "modes": [
+                    "rich_text"
+                  ]
+                },
+                {
+                  "name": "paragraph2",
+                  "label": "Bekezdés 2",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "konyvek",
+              "label": "Könyvek és publikációk",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "markdown",
+                  "buttons": [
+                    "bold",
+                    "italic"
+                  ],
+                  "editor_components": [],
+                  "modes": [
+                    "rich_text"
+                  ]
+                },
+                {
+                  "name": "image1",
+                  "label": "Kép 1",
+                  "widget": "image"
+                },
+                {
+                  "name": "heading2",
+                  "label": "Cím 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph2",
+                  "label": "Bekezdés 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "image2",
+                  "label": "Kép 2",
+                  "widget": "image"
+                },
+                {
+                  "name": "heading3",
+                  "label": "Cím 3",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph3",
+                  "label": "Bekezdés 3",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "fitymaszukulet",
+          "label": "Fitymaszűkület",
+          "file": "src/content/site/fitymaszukulet.json",
+          "fields": [
+            {
+              "name": "section1",
+              "label": "Fitymaszűkület: tünetek és kezelési lehetőségek",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                },
+                {
+                  "name": "button2",
+                  "label": "Gomb / hivatkozás felirata 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "button3",
+                  "label": "Gomb / hivatkozás felirata 3",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "section2",
+              "label": "Oldalsó menü",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "button2",
+                  "label": "Gomb / hivatkozás felirata 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "button3",
+                  "label": "Gomb / hivatkozás felirata 3",
+                  "widget": "string"
+                },
+                {
+                  "name": "button4",
+                  "label": "Gomb / hivatkozás felirata 4",
+                  "widget": "string"
+                },
+                {
+                  "name": "button5",
+                  "label": "Gomb / hivatkozás felirata 5",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "attekintes",
+              "label": "Mit érdemes tudni a kezelésről?",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "tunetek",
+              "label": "Fitymaszűkület vagy rövid fék?",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "markdown",
+                  "buttons": [
+                    "bold",
+                    "italic"
+                  ],
+                  "editor_components": [],
+                  "modes": [
+                    "rich_text"
+                  ]
+                },
+                {
+                  "name": "paragraph2",
+                  "label": "Bekezdés 2",
+                  "widget": "markdown",
+                  "buttons": [
+                    "bold",
+                    "italic"
+                  ],
+                  "editor_components": [],
+                  "modes": [
+                    "rich_text"
+                  ]
+                },
+                {
+                  "name": "paragraph3",
+                  "label": "Bekezdés 3",
+                  "widget": "text"
+                },
+                {
+                  "name": "heading2",
+                  "label": "Cím 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph4",
+                  "label": "Bekezdés 4",
+                  "widget": "markdown",
+                  "buttons": [
+                    "bold",
+                    "italic"
+                  ],
+                  "editor_components": [],
+                  "modes": [
+                    "rich_text"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "kezeles",
+              "label": "Gyógyszeres kezelés, fékplasztika vagy körülmetélés?",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraph2",
+                  "label": "Bekezdés 2",
+                  "widget": "markdown",
+                  "buttons": [
+                    "bold",
+                    "italic"
+                  ],
+                  "editor_components": [],
+                  "modes": [
+                    "rich_text"
+                  ]
+                },
+                {
+                  "name": "paragraph3",
+                  "label": "Bekezdés 3",
+                  "widget": "text"
+                },
+                {
+                  "name": "heading2",
+                  "label": "Cím 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph4",
+                  "label": "Bekezdés 4",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "felepules",
+              "label": "Mire számíthat a műtét után?",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraph2",
+                  "label": "Bekezdés 2",
+                  "widget": "text"
+                },
+                {
+                  "name": "heading2",
+                  "label": "Cím 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph3",
+                  "label": "Bekezdés 3",
+                  "widget": "text"
+                },
+                {
+                  "name": "heading3",
+                  "label": "Cím 3",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph4",
+                  "label": "Bekezdés 4",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraph5",
+                  "label": "Bekezdés 5",
+                  "widget": "text"
+                },
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "video",
+              "label": "Videós tájékoztató",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading2",
+                  "label": "Cím 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "text1",
+                  "label": "Felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "text2",
+                  "label": "Felirat 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "text3",
+                  "label": "Felirat 3",
+                  "widget": "string"
+                },
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "editorial",
+              "label": "Frissítés és szakmai források",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "updated",
+                  "label": "Frissítés dátuma",
+                  "widget": "datetime",
+                  "date_format": "YYYY-MM-DD",
+                  "time_format": false,
+                  "format": "YYYY-MM-DD",
+                  "picker_utc": true
+                },
+                {
+                  "name": "sources",
+                  "label": "Szakmai források",
+                  "widget": "list",
+                  "min": 1,
+                  "summary": "{{fields.name}}",
+                  "fields": [
+                    {
+                      "name": "name",
+                      "label": "Forrás neve",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "url",
+                      "label": "Forrás hivatkozása",
+                      "widget": "string"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "papulak",
+          "label": "Papulák",
+          "file": "src/content/site/papulak.json",
+          "fields": [
+            {
+              "name": "section1",
+              "label": "Gyöngyházfényű papulák: felismerés és eltávolítás",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                },
+                {
+                  "name": "button2",
+                  "label": "Gomb / hivatkozás felirata 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "button3",
+                  "label": "Gomb / hivatkozás felirata 3",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "section2",
+              "label": "Oldalsó menü",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "button2",
+                  "label": "Gomb / hivatkozás felirata 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "button3",
+                  "label": "Gomb / hivatkozás felirata 3",
+                  "widget": "string"
+                },
+                {
+                  "name": "button4",
+                  "label": "Gomb / hivatkozás felirata 4",
+                  "widget": "string"
+                },
+                {
+                  "name": "button5",
+                  "label": "Gomb / hivatkozás felirata 5",
+                  "widget": "string"
+                },
+                {
+                  "name": "button6",
+                  "label": "Gomb / hivatkozás felirata 6",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "attekintes",
+              "label": "Mit érdemes tudni a kezelésről?",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "papulak",
+              "label": "Mik azok a papulák?",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                },
+                {
+                  "name": "heading2",
+                  "label": "Cím 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph2",
+                  "label": "Bekezdés 2",
+                  "widget": "markdown",
+                  "buttons": [
+                    "bold",
+                    "italic"
+                  ],
+                  "editor_components": [],
+                  "modes": [
+                    "rich_text"
+                  ]
+                },
+                {
+                  "name": "paragraph3",
+                  "label": "Bekezdés 3",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "kezeles",
+              "label": "Mikor jöhet szóba az eltávolítás?",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "markdown",
+                  "buttons": [
+                    "bold",
+                    "italic"
+                  ],
+                  "editor_components": [],
+                  "modes": [
+                    "rich_text"
+                  ]
+                },
+                {
+                  "name": "paragraph2",
+                  "label": "Bekezdés 2",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraph3",
+                  "label": "Bekezdés 3",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "beavatkozas",
+              "label": "Hogyan zajlik a beavatkozás?",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraph2",
+                  "label": "Bekezdés 2",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraph3",
+                  "label": "Bekezdés 3",
+                  "widget": "markdown",
+                  "buttons": [
+                    "bold",
+                    "italic"
+                  ],
+                  "editor_components": [],
+                  "modes": [
+                    "rich_text"
+                  ]
+                },
+                {
+                  "name": "paragraph4",
+                  "label": "Bekezdés 4",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "gyogyulas",
+              "label": "Gyógyulás és mindennapi teendők",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraph2",
+                  "label": "Bekezdés 2",
+                  "widget": "markdown",
+                  "buttons": [
+                    "bold",
+                    "italic"
+                  ],
+                  "editor_components": [],
+                  "modes": [
+                    "rich_text"
+                  ]
+                },
+                {
+                  "name": "paragraph3",
+                  "label": "Bekezdés 3",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "video",
+              "label": "Papulák: tudnivalók videón",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading2",
+                  "label": "Cím 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "text1",
+                  "label": "Felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "text2",
+                  "label": "Felirat 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "text3",
+                  "label": "Felirat 3",
+                  "widget": "string"
+                },
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "editorial",
+              "label": "Frissítés és szakmai források",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "updated",
+                  "label": "Frissítés dátuma",
+                  "widget": "datetime",
+                  "date_format": "YYYY-MM-DD",
+                  "time_format": false,
+                  "format": "YYYY-MM-DD",
+                  "picker_utc": true
+                },
+                {
+                  "name": "sources",
+                  "label": "Szakmai források",
+                  "widget": "list",
+                  "min": 1,
+                  "summary": "{{fields.name}}",
+                  "fields": [
+                    {
+                      "name": "name",
+                      "label": "Forrás neve",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "url",
+                      "label": "Forrás hivatkozása",
+                      "widget": "string"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "peniszgorbulet",
+          "label": "Péniszgörbület",
+          "file": "src/content/site/peniszgorbulet.json",
+          "fields": [
+            {
+              "name": "section1",
+              "label": "Péniszgörbület: okok és kezelési lehetőségek",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                },
+                {
+                  "name": "button2",
+                  "label": "Gomb / hivatkozás felirata 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "button3",
+                  "label": "Gomb / hivatkozás felirata 3",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "section2",
+              "label": "Oldalsó menü",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "button2",
+                  "label": "Gomb / hivatkozás felirata 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "button3",
+                  "label": "Gomb / hivatkozás felirata 3",
+                  "widget": "string"
+                },
+                {
+                  "name": "button4",
+                  "label": "Gomb / hivatkozás felirata 4",
+                  "widget": "string"
+                },
+                {
+                  "name": "button5",
+                  "label": "Gomb / hivatkozás felirata 5",
+                  "widget": "string"
+                },
+                {
+                  "name": "button6",
+                  "label": "Gomb / hivatkozás felirata 6",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "attekintes",
+              "label": "Mit érdemes tudni a kezelésről?",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "kezeles",
+              "label": "Mikor indokolt a kezelés?",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraph2",
+                  "label": "Bekezdés 2",
+                  "widget": "markdown",
+                  "buttons": [
+                    "bold",
+                    "italic"
+                  ],
+                  "editor_components": [],
+                  "modes": [
+                    "rich_text"
+                  ]
+                },
+                {
+                  "name": "paragraph3",
+                  "label": "Bekezdés 3",
+                  "widget": "text"
+                },
+                {
+                  "name": "heading2",
+                  "label": "Cím 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph4",
+                  "label": "Bekezdés 4",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "mutet",
+              "label": "Mit érdemes tudni a műtétről?",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraph2",
+                  "label": "Bekezdés 2",
+                  "widget": "markdown",
+                  "buttons": [
+                    "bold",
+                    "italic"
+                  ],
+                  "editor_components": [],
+                  "modes": [
+                    "rich_text"
+                  ]
+                },
+                {
+                  "name": "paragraph3",
+                  "label": "Bekezdés 3",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraph4",
+                  "label": "Bekezdés 4",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "felepules",
+              "label": "Hogyan zajlik a felépülés?",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraph2",
+                  "label": "Bekezdés 2",
+                  "widget": "text"
+                },
+                {
+                  "name": "heading2",
+                  "label": "Cím 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph3",
+                  "label": "Bekezdés 3",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "konzultacio",
+              "label": "Hogyan készüljön a konzultációra?",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraph2",
+                  "label": "Bekezdés 2",
+                  "widget": "text"
+                },
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "video",
+              "label": "Péniszgörbület: tudnivalók videón",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading2",
+                  "label": "Cím 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "text1",
+                  "label": "Felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "text2",
+                  "label": "Felirat 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "text3",
+                  "label": "Felirat 3",
+                  "widget": "string"
+                },
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "editorial",
+              "label": "Frissítés és szakmai források",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "updated",
+                  "label": "Frissítés dátuma",
+                  "widget": "datetime",
+                  "date_format": "YYYY-MM-DD",
+                  "time_format": false,
+                  "format": "YYYY-MM-DD",
+                  "picker_utc": true
+                },
+                {
+                  "name": "sources",
+                  "label": "Szakmai források",
+                  "widget": "list",
+                  "min": 1,
+                  "summary": "{{fields.name}}",
+                  "fields": [
+                    {
+                      "name": "name",
+                      "label": "Forrás neve",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "url",
+                      "label": "Forrás hivatkozása",
+                      "widget": "string"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "shared",
+      "label": "Közös elemek",
+      "files": [
+        {
+          "name": "practice",
+          "label": "Rendelő adatai",
+          "file": "src/content/site/practice.json",
+          "fields": [
+            {
+              "name": "name",
+              "label": "Orvos neve",
+              "widget": "string"
+            },
+            {
+              "name": "phone",
+              "label": "Telefonszám",
+              "widget": "string"
+            },
+            {
+              "name": "email",
+              "label": "E-mail-cím",
+              "widget": "string"
+            },
+            {
+              "name": "address",
+              "label": "Rendelő címe",
+              "widget": "string"
+            },
+            {
+              "name": "officeHours",
+              "label": "Rendelési idő",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "ContactCTA",
+          "label": "Kapcsolat",
+          "file": "src/content/site/ContactCTA.json",
+          "fields": [
+            {
+              "name": "kapcsolat",
+              "label": "Kérjen időpontot",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "eyebrow1",
+                  "label": "Kis felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading1",
+                  "label": "Cím 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                },
+                {
+                  "name": "text1",
+                  "label": "Felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "text2",
+                  "label": "Felirat 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "text3",
+                  "label": "Felirat 3",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "content",
+              "label": "Szövegek és képek",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "labels",
+              "label": "Elérhetőségek feliratai",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "phone",
+                  "label": "Telefon felirata",
+                  "widget": "string"
+                },
+                {
+                  "name": "email",
+                  "label": "E-mail felirata",
+                  "widget": "string"
+                },
+                {
+                  "name": "address",
+                  "label": "Cím felirata",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Header",
+          "label": "Fejléc és menü",
+          "file": "src/content/site/Header.json",
+          "fields": [
+            {
+              "name": "navItems",
+              "label": "Menüpontok",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "item1",
+                  "label": "Fitymaszűkület",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "label",
+                      "label": "Felirat",
+                      "widget": "string"
+                    }
+                  ]
+                },
+                {
+                  "name": "item2",
+                  "label": "Dr. Fekete Ferenc",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "label",
+                      "label": "Felirat",
+                      "widget": "string"
+                    }
+                  ]
+                },
+                {
+                  "name": "item3",
+                  "label": "Gyakori kérdések",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "label",
+                      "label": "Felirat",
+                      "widget": "string"
+                    }
+                  ]
+                },
+                {
+                  "name": "item4",
+                  "label": "Kapcsolat",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "label",
+                      "label": "Felirat",
+                      "widget": "string"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "content",
+              "label": "Szövegek és képek",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "text1",
+                  "label": "Felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "text2",
+                  "label": "Felirat 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "button1",
+                  "label": "Gomb / hivatkozás felirata 1",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Footer",
+          "label": "Lábléc",
+          "file": "src/content/site/Footer.json",
+          "fields": [
+            {
+              "name": "content",
+              "label": "Szövegek és képek",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "text1",
+                  "label": "Felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "text2",
+                  "label": "Felirat 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "text3",
+                  "label": "Felirat 3",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MedicalEditorial",
+          "label": "Betegtájékoztatók lábjegyzete",
+          "file": "src/content/site/MedicalEditorial.json",
+          "fields": [
+            {
+              "name": "content",
+              "label": "Szövegek és képek",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "text1",
+                  "label": "Felirat 1",
+                  "widget": "string"
+                },
+                {
+                  "name": "text2",
+                  "label": "Felirat 2",
+                  "widget": "string"
+                },
+                {
+                  "name": "text3",
+                  "label": "Felirat 3",
+                  "widget": "string"
+                },
+                {
+                  "name": "text4",
+                  "label": "Felirat 4",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraph1",
+                  "label": "Bekezdés 1",
+                  "widget": "text"
+                },
+                {
+                  "name": "text5",
+                  "label": "Felirat 5",
+                  "widget": "string"
+                },
+                {
+                  "name": "text6",
+                  "label": "Felirat 6",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

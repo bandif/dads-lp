@@ -1,0 +1,21 @@
+{
+  "problems": {
+    "item1": {
+      "title": "Fitymaszűkület, rövid fék",
+      "text": "Feszülés, fájdalom, nehéz hátrahúzhatóság vagy visszatérő sérülések esetén: a panaszok kivizsgálása és személyre szabott kezelése."
+    },
+    "item2": {
+      "title": "Papulák a makk peremén",
+      "text": "A makk peremén megjelenő apró kiemelkedések vizsgálata és a kezelési lehetőségek átbeszélése."
+    },
+    "item3": {
+      "title": "Péniszgörbület",
+      "text": "A nemi életet zavaró görbület kivizsgálása és az egyéni panaszokhoz igazodó kezelési lehetőségek."
+    }
+  },
+  "section1": {
+    "eyebrow1": "Panaszok és kezelési területek",
+    "heading1": "Miben tudok segíteni?",
+    "text1": "Tovább"
+  }
+}

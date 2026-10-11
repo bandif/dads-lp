@@ -1,0 +1,21 @@
+{
+  "steps": [
+    {
+      "title": "Vegye fel velem a kapcsolatot",
+      "text": "Telefonon vagy e-mailben."
+    },
+    {
+      "title": "Rövid egyeztetés",
+      "text": "Megbeszéljük a panaszt és a következő lépést."
+    },
+    {
+      "title": "Személyes vizsgálat",
+      "text": "Vizsgálat és szükség esetén a kezelési lehetőségek megbeszélése a budapesti rendelőben."
+    }
+  ],
+  "section1": {
+    "eyebrow1": "Egyszerű kapcsolatfelvétel",
+    "heading1": "Hogyan kérhet időpontot?",
+    "button1": "Kapcsolatfelvétel"
+  }
+}

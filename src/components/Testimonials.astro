@@ -1,35 +1,23 @@
 ---
+import copy from "../content/site/Testimonials.json";
 // Rating and count transcribed from the owner's supplied Google listing screenshot.
 // Owner-supplied link to the listing's reviews view.
 const googleUrl = "https://www.google.com/maps/search/?api=1&query=Dr.%20Fekete%20Ferenc%20Budapest%20Kap%C3%A1s%20utca%2026";
 // Review text and first-name attributions supplied by the owner.
-const reviews = [
-  {
-    name: "Gábor",
-    text: "Dr. Fekete Ferenc rendkívül kedves, gyors és felkészült szakember. Mindenről érthetően tájékoztatott, türelmesen válaszolt a kérdéseimre, végig megnyugtató és empatikus hozzáállást tanúsított. Csak ajánlani tudom! Köszönöm mégegyszer!",
-  },
-  {
-    name: "György",
-    text: "Nagyon örülök, hogy Őrá bíztam a problémám megoldását. Profi a szakterületén és bármikor újra rábíznám magamat. Köszönöm Doktor úr!",
-  },
-  {
-    name: "János",
-    text: "Hihetetlen rutin és professzionalizmus mellett a Doktor úr betegközpontú, minden tájékoztatást megkaptam az operáció előtt és után is. A beavatkozás eredménye pedig tökéletes lett. A kellemes hangulatú rendelő és a személyes kapcsolattartás lehetősége pedig csak plus",
-  },
-];
+const reviews = copy.reviews;
 ---
 <section id="velemenyek" class="reviews-section" aria-labelledby="reviews-title">
   <div class="container">
     <div class="reviews-heading">
       <div>
-        <p class="eyebrow">Google-értékelések</p>
-        <h2 id="reviews-title">Pácienseim visszajelzései</h2>
-        <a class="text-link" href={googleUrl} target="_blank" rel="noopener noreferrer">Vélemények a Google-on <span aria-hidden="true">↗</span></a>
+        <p class="eyebrow">{copy.velemenyek.eyebrow1}</p>
+        <h2 id="reviews-title">{copy.velemenyek.heading1}</h2>
+        <a class="text-link" href={googleUrl} target="_blank" rel="noopener noreferrer">{copy.velemenyek.text1} <span aria-hidden="true">↗</span></a>
       </div>
-      <div class="reviews-rating" aria-label="5,0 az 5-ből, 34 Google-értékelés alapján">
-        <strong>5,0<span> / 5</span></strong>
+      <div class="reviews-rating" aria-label={`${copy.rating.score}${copy.rating.scale}, ${copy.velemenyek.paragraph1}`}>
+        <strong>{copy.rating.score}<span>{copy.rating.scale}</span></strong>
         <span class="review-stars" aria-hidden="true">★★★★★</span>
-        <p>34 Google-értékelés alapján</p>
+        <p>{copy.velemenyek.paragraph1}</p>
       </div>
     </div>
     {reviews.length > 0 && (

@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import hero from "../content/site/Hero.json";
+import profile from "../content/site/dr-fekete-ferenc.json";
 import { practice } from "../data/practice";
 import { medicalContent } from "../data/medical-content";
 
@@ -23,7 +25,7 @@ const schema = {
       "@type": "Person", "@id": doctorId,
       name: practice.name, jobTitle: "Urológus szakorvos",
       url: new URL(practice.profilePath, site).href,
-      image: new URL("/dr-fekete-ferenc-mutoben.jpg", site).href,
+      image: new URL(profile.section1.image1, site).href,
       worksFor: { "@id": practiceId },
     },
     {
@@ -31,16 +33,9 @@ const schema = {
       name: practice.name, url: new URL("/", site).href,
       medicalSpecialty: "https://schema.org/Urology",
       telephone: practice.phone, email: practice.email,
-      image: new URL("/hero-dr-fekete-ferenc.jpg", site).href,
+      image: new URL(hero.section1.image1, site).href,
       hasMap: practice.mapUrl,
-      address: {
-        "@type": "PostalAddress", streetAddress: "Kapás utca 26.",
-        addressLocality: "Budapest", postalCode: "1027", addressCountry: "HU",
-      },
-      openingHoursSpecification: [
-        { "@type": "OpeningHoursSpecification", dayOfWeek: ["https://schema.org/Tuesday", "https://schema.org/Thursday"], opens: "09:00", closes: "12:00" },
-        { "@type": "OpeningHoursSpecification", dayOfWeek: ["https://schema.org/Tuesday", "https://schema.org/Thursday"], opens: "16:00", closes: "19:00" },
-      ],
+      address: practice.address,
     },
     {
       "@type": "WebSite", "@id": websiteId,

@@ -1,0 +1,75 @@
+{
+  "section1": {
+    "button1": "← Miben tudok segíteni?",
+    "eyebrow1": "Péniszgörbület",
+    "heading1": "Péniszgörbület: okok és kezelési lehetőségek",
+    "paragraph1": "Ha a pénisz görbülete megnehezíti az együttlétet vagy fájdalmat okoz, érdemes urológushoz fordulni. A vizsgálat segít tisztázni az okát, és eldönteni, milyen kezelés javíthat a panaszokon.",
+    "button2": "Időpont egyeztetés",
+    "button3": "Videó megtekintése"
+  },
+  "section2": {
+    "eyebrow1": "Ezen az oldalon",
+    "button1": "Rövid áttekintés",
+    "button2": "Mikor indokolt a kezelés?",
+    "button3": "A műtét és eredménye",
+    "button4": "Beavatkozás és felépülés",
+    "button5": "Felkészülés a konzultációra",
+    "button6": "Videós magyarázat"
+  },
+  "attekintes": {
+    "eyebrow1": "Röviden",
+    "heading1": "Mit érdemes tudni a kezelésről?",
+    "paragraph1": "Az enyhe, panaszt nem okozó görbület nem feltétlenül igényel kezelést. Fájdalom, romló görbület vagy az együttlét nehézsége esetén érdemes urológushoz fordulni. A kezelés attól is függ, hogy veleszületett eltérésről vagy később kialakult, például Peyronie-betegséghez kapcsolódó görbületről van-e szó."
+  },
+  "kezeles": {
+    "eyebrow1": "A panaszok megértése",
+    "heading1": "Mikor indokolt a kezelés?",
+    "paragraph1": "Az enyhe, panaszt nem okozó görbület önmagában nem feltétlenül igényel kezelést. Elsősorban akkor érdemes segítséget kérni, ha az eltérés akadályozza a nemi életet, fájdalmat okoz, vagy újonnan jelentkezik és fokozódik.",
+    "paragraph2": "A görbület lehet **veleszületett**, de később is kialakulhat, például a pénisz szöveteinek hegesedésével járó **Peyronie-betegség** következtében. A kezelési lehetőségek az októl és az állapot változásától is függnek.",
+    "paragraph3": "A veleszületett görbület korrekciója műtéttel történik. Szerzett görbületnél bizonyos esetekben nem műtéti kezelés is szóba jöhet; műtétet általában már stabil, nem romló állapotban mérlegelünk.",
+    "heading2": "A cél a nemi élet javítása",
+    "paragraph4": "Elsősorban az együttlétet akadályozó esetekben vállalok műtétet. A cél a görbület olyan mértékű javítása, amely megkönnyíti a nemi életet. Erőltetett otthoni nyújtásba vagy pumpahasználatba ne kezdjen: az orvos által javasolt eszközös kezelés külön mérlegelést és útmutatást igényel."
+  },
+  "mutet": {
+    "eyebrow1": "Lehetőségek és mérlegelendő szempontok",
+    "heading1": "Mit érdemes tudni a műtétről?",
+    "paragraph1": "Az egyik műtéti megoldás során belső varratokkal rövidítjük a pénisz hosszabb, domború oldalát, így csökkentjük a görbületet. A megfelelő eljárás kiválasztása a görbület irányától, mértékétől és a merevedési funkciótól is függ.",
+    "paragraph2": "**A kiegyenesítés a pénisz rövidülésével járhat.** Ennek várható mértékét a vizsgálat alapján beszéljük át. Egyes eljárásoknál a fityma részleges vagy teljes eltávolítása is szükségessé válhat; ezt előre egyeztetjük.",
+    "paragraph3": "A cél már az első műtéttel megfelelő javulást elérni, de tökéletes egyenesség nem garantálható. Maradhat vissza vagy később ismét kialakulhat görbület, ami esetenként további beavatkozást indokolhat.",
+    "paragraph4": "A belső varratok átmenetileg tapinthatók lehetnek. A lehetséges kockázatokról — többek között érzésváltozásról, merevedési zavarról, vérzésről és fertőzésről — a konzultáción részletesen beszélünk."
+  },
+  "felepules": {
+    "eyebrow1": "A beavatkozás napjától a gyógyulásig",
+    "heading1": "Hogyan zajlik a felépülés?",
+    "paragraph1": "A beavatkozást általában helyi érzéstelenítésben végzem. Az érzéstelenítés módját és a műtét menetét előzetesen egyeztetjük. Utána érzékenység, duzzanat vagy fájdalom jelentkezhet, amely szükség esetén kezelhető.",
+    "paragraph2": "A hazabocsátás általában aznap este vagy másnap reggel történik, az állapottól és a megfigyelés eredményétől függően. Ezt követően néhány nap pihenés javasolt.",
+    "heading2": "Mikor térhet vissza a megszokott tevékenységekhez?",
+    "paragraph3": "A sporthoz való visszatérés általában körülbelül 2 hét, a nemi élet újrakezdése 4–6 hét után merülhet fel. Ezek tájékoztató időtartamok: a pontos időzítést a gyógyulás és az orvosi kontroll alapján határozzuk meg."
+  },
+  "konzultacio": {
+    "eyebrow1": "Az első lépés",
+    "heading1": "Hogyan készüljön a konzultációra?",
+    "paragraph1": "Gondolja át, mióta észleli a görbületet, változott-e azóta, és milyen panaszt okoz. Ha van korábbi lelete, hozza magával.",
+    "paragraph2": "A megítéléshez segítséget jelenthet egy merevedéskor készült fénykép, amelyen látható a görbület. Ezt saját telefonján is megmutathatja a személyes vizsgálaton. A konzultáció során diszkréten átbeszéljük a lehetőségeket és az esetleges műtét részleteit.",
+    "button1": "Kérdése van? Írjon e-mailt →"
+  },
+  "video": {
+    "eyebrow1": "Dr. Fekete Ferenc tájékoztatója",
+    "heading1": "Péniszgörbület: tudnivalók videón",
+    "paragraph1": "Ha szívesebben hallgatná meg a tájékoztatást, nézze meg Dr. Fekete Ferenc videóját.",
+    "heading2": "A legfontosabb tudnivalók röviden",
+    "text1": "A kezelés megválasztásánál a görbület oka és változása is számít.",
+    "text2": "A műtét célja az együttlét megkönnyítése; tökéletes egyenesség nem garantálható.",
+    "text3": "A lehetséges rövidülést, kockázatokat és felépülést a konzultáción kell átbeszélni.",
+    "button1": "Megtekintés a YouTube-on →"
+  },
+  "editorial": {
+    "updated": "2026-10-04",
+    "sources": [
+      {
+        "name": "NHS: Peyronie-betegség",
+        "url": "https://www.nhs.uk/conditions/peyronies-disease/"
+      }
+    ]
+  }
+}

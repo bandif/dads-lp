@@ -1,16 +1,13 @@
 ---
-const credentials = [
-  "2000 óta a Semmelweis Egyetem Urológiai Klinikájának munkatársa.",
-  "Fő szakterülete a férfi nemi szervek betegségei és műtéti kezelése.",
-  "A Magyar Szexuális Medicina Társaság elnöke volt 2008 és 2018 között.",
-];
+import copy from "../content/site/AboutDoctor.json";
+const credentials = copy.credentials;
 ---
 
 <section class="section" id="orvos" aria-labelledby="doctor-title">
   <div class="container doctor-grid">
     <div class="doctor-photo">
       <img
-        src="/dr-fekete-ferenc-mutoben.jpg"
+        src={copy.orvos.image1}
         alt="Dr. Fekete Ferenc műtéti környezetben"
         width="1280"
         height="960"
@@ -18,20 +15,14 @@ const credentials = [
       />
     </div>
     <div class="doctor-copy">
-      <p class="eyebrow">A rendelésről</p>
-      <h2 id="doctor-title">Dr. Fekete Ferenc</h2>
-      <p class="subheading">Urológus szakorvos</p>
-      <p>
-        Dr. Fekete Ferenc 1982-ben diplomázott a budapesti Semmelweis Egyetemen,
-        majd 1987-ben szakvizsgázott urológiából. Több évtizedes klinikai és
-        magánrendelői tapasztalattal foglalkozik férfi urológiai panaszokkal,
-        különösen fitymaszűkület, rövid fék és kapcsolódó műtéti problémák
-        ellátásával.
-      </p>
+      <p class="eyebrow">{copy.orvos.eyebrow1}</p>
+      <h2 id="doctor-title">{copy.orvos.heading1}</h2>
+      <p class="subheading">{copy.orvos.paragraph1}</p>
+      <p>{copy.orvos.paragraph2}</p>
       <ul class="credential-list">
         {credentials.map((credential) => <li>{credential}</li>)}
       </ul>
-      <a class="button button-secondary" href="/dr-fekete-ferenc/">Bővebben rólam</a>
+      <a class="button button-secondary" href="/dr-fekete-ferenc/">{copy.orvos.button1}</a>
     </div>
   </div>
 </section>

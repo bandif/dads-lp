@@ -1,4 +1,7 @@
 ---
+import { practice } from "../data/practice";
+import copy from "../content/site/peniszgorbulet.json";
+import { inlineText } from "../data/inline-text";
 import MedicalEditorial from "../components/MedicalEditorial.astro";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
@@ -10,79 +13,79 @@ import ContactCTA from "../components/ContactCTA.astro";
   <main>
     <section class="condition-hero">
       <div class="container">
-        <a class="text-link" href="/#problemak-title">← Miben tudok segíteni?</a>
-        <p class="eyebrow">Péniszgörbület</p>
-        <h1>Péniszgörbület: okok és kezelési lehetőségek</h1>
-        <p class="condition-lead">Ha a pénisz görbülete megnehezíti az együttlétet vagy fájdalmat okoz, érdemes urológushoz fordulni. A vizsgálat segít tisztázni az okát, és eldönteni, milyen kezelés javíthat a panaszokon.</p>
+        <a class="text-link" href="/#problemak-title">{copy.section1.button1}</a>
+        <p class="eyebrow">{copy.section1.eyebrow1}</p>
+        <h1>{copy.section1.heading1}</h1>
+        <p class="condition-lead">{copy.section1.paragraph1}</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#kapcsolat">Időpont egyeztetés</a>
-          <a class="button button-secondary" href="#video">Videó megtekintése</a>
+          <a class="button button-primary" href="#kapcsolat">{copy.section1.button2}</a>
+          <a class="button button-secondary" href="#video">{copy.section1.button3}</a>
         </div>
       </div>
     </section>
     <div class="container condition-layout">
       <aside class="condition-nav" aria-label="Az oldal tartalma">
-        <p class="eyebrow">Ezen az oldalon</p>
-        <a href="#attekintes">Rövid áttekintés</a>
-        <a href="#kezeles">Mikor indokolt a kezelés?</a>
-        <a href="#mutet">A műtét és eredménye</a>
-        <a href="#felepules">Beavatkozás és felépülés</a>
-        <a href="#konzultacio">Felkészülés a konzultációra</a>
-          <a href="#video">Videós magyarázat</a>
+        <p class="eyebrow">{copy.section2.eyebrow1}</p>
+        <a href="#attekintes">{copy.section2.button1}</a>
+        <a href="#kezeles">{copy.section2.button2}</a>
+        <a href="#mutet">{copy.section2.button3}</a>
+        <a href="#felepules">{copy.section2.button4}</a>
+        <a href="#konzultacio">{copy.section2.button5}</a>
+          <a href="#video">{copy.section2.button6}</a>
       </aside>
       <div class="condition-content">
         <section id="attekintes" aria-labelledby="attekintes-title">
-          <p class="eyebrow">Röviden</p>
-          <h2 id="attekintes-title">Mit érdemes tudni a kezelésről?</h2>
-          <p>Az enyhe, panaszt nem okozó görbület nem feltétlenül igényel kezelést. Fájdalom, romló görbület vagy az együttlét nehézsége esetén érdemes urológushoz fordulni. A kezelés attól is függ, hogy veleszületett eltérésről vagy később kialakult, például Peyronie-betegséghez kapcsolódó görbületről van-e szó.</p>
+          <p class="eyebrow">{copy.attekintes.eyebrow1}</p>
+          <h2 id="attekintes-title">{copy.attekintes.heading1}</h2>
+          <p>{copy.attekintes.paragraph1}</p>
         </section>
 
         <section id="kezeles" aria-labelledby="kezeles-title">
-          <p class="eyebrow">A panaszok megértése</p>
-          <h2 id="kezeles-title">Mikor indokolt a kezelés?</h2>
-          <p>Az enyhe, panaszt nem okozó görbület önmagában nem feltétlenül igényel kezelést. Elsősorban akkor érdemes segítséget kérni, ha az eltérés akadályozza a nemi életet, fájdalmat okoz, vagy újonnan jelentkezik és fokozódik.</p>
-          <p>A görbület lehet <strong>veleszületett</strong>, de később is kialakulhat, például a pénisz szöveteinek hegesedésével járó <strong>Peyronie-betegség</strong> következtében. A kezelési lehetőségek az októl és az állapot változásától is függnek.</p>
-          <p>A veleszületett görbület korrekciója műtéttel történik. Szerzett görbületnél bizonyos esetekben nem műtéti kezelés is szóba jöhet; műtétet általában már stabil, nem romló állapotban mérlegelünk.</p>
+          <p class="eyebrow">{copy.kezeles.eyebrow1}</p>
+          <h2 id="kezeles-title">{copy.kezeles.heading1}</h2>
+          <p>{copy.kezeles.paragraph1}</p>
+          <p><Fragment set:html={inlineText(copy.kezeles.paragraph2)} /></p>
+          <p>{copy.kezeles.paragraph3}</p>
           <div class="treatment-note">
-            <h3>A cél a nemi élet javítása</h3>
-            <p>Elsősorban az együttlétet akadályozó esetekben vállalok műtétet. A cél a görbület olyan mértékű javítása, amely megkönnyíti a nemi életet. Erőltetett otthoni nyújtásba vagy pumpahasználatba ne kezdjen: az orvos által javasolt eszközös kezelés külön mérlegelést és útmutatást igényel.</p>
+            <h3>{copy.kezeles.heading2}</h3>
+            <p>{copy.kezeles.paragraph4}</p>
           </div>
         </section>
 
         <section id="mutet" aria-labelledby="mutet-title">
-          <p class="eyebrow">Lehetőségek és mérlegelendő szempontok</p>
-          <h2 id="mutet-title">Mit érdemes tudni a műtétről?</h2>
-          <p>Az egyik műtéti megoldás során belső varratokkal rövidítjük a pénisz hosszabb, domború oldalát, így csökkentjük a görbületet. A megfelelő eljárás kiválasztása a görbület irányától, mértékétől és a merevedési funkciótól is függ.</p>
-          <p><strong>A kiegyenesítés a pénisz rövidülésével járhat.</strong> Ennek várható mértékét a vizsgálat alapján beszéljük át. Egyes eljárásoknál a fityma részleges vagy teljes eltávolítása is szükségessé válhat; ezt előre egyeztetjük.</p>
-          <p>A cél már az első műtéttel megfelelő javulást elérni, de tökéletes egyenesség nem garantálható. Maradhat vissza vagy később ismét kialakulhat görbület, ami esetenként további beavatkozást indokolhat.</p>
-          <p>A belső varratok átmenetileg tapinthatók lehetnek. A lehetséges kockázatokról — többek között érzésváltozásról, merevedési zavarról, vérzésről és fertőzésről — a konzultáción részletesen beszélünk.</p>
+          <p class="eyebrow">{copy.mutet.eyebrow1}</p>
+          <h2 id="mutet-title">{copy.mutet.heading1}</h2>
+          <p>{copy.mutet.paragraph1}</p>
+          <p><Fragment set:html={inlineText(copy.mutet.paragraph2)} /></p>
+          <p>{copy.mutet.paragraph3}</p>
+          <p>{copy.mutet.paragraph4}</p>
         </section>
 
         <section id="felepules" aria-labelledby="felepules-title">
-          <p class="eyebrow">A beavatkozás napjától a gyógyulásig</p>
-          <h2 id="felepules-title">Hogyan zajlik a felépülés?</h2>
-          <p>A beavatkozást általában helyi érzéstelenítésben végzem. Az érzéstelenítés módját és a műtét menetét előzetesen egyeztetjük. Utána érzékenység, duzzanat vagy fájdalom jelentkezhet, amely szükség esetén kezelhető.</p>
-          <p>A hazabocsátás általában aznap este vagy másnap reggel történik, az állapottól és a megfigyelés eredményétől függően. Ezt követően néhány nap pihenés javasolt.</p>
+          <p class="eyebrow">{copy.felepules.eyebrow1}</p>
+          <h2 id="felepules-title">{copy.felepules.heading1}</h2>
+          <p>{copy.felepules.paragraph1}</p>
+          <p>{copy.felepules.paragraph2}</p>
           <div class="treatment-note">
-            <h3>Mikor térhet vissza a megszokott tevékenységekhez?</h3>
-            <p>A sporthoz való visszatérés általában körülbelül 2 hét, a nemi élet újrakezdése 4–6 hét után merülhet fel. Ezek tájékoztató időtartamok: a pontos időzítést a gyógyulás és az orvosi kontroll alapján határozzuk meg.</p>
+            <h3>{copy.felepules.heading2}</h3>
+            <p>{copy.felepules.paragraph3}</p>
           </div>
         </section>
 
         <section id="konzultacio" aria-labelledby="konzultacio-title">
-          <p class="eyebrow">Az első lépés</p>
-          <h2 id="konzultacio-title">Hogyan készüljön a konzultációra?</h2>
-          <p>Gondolja át, mióta észleli a görbületet, változott-e azóta, és milyen panaszt okoz. Ha van korábbi lelete, hozza magával.</p>
-          <p>A megítéléshez segítséget jelenthet egy merevedéskor készült fénykép, amelyen látható a görbület. Ezt saját telefonján is megmutathatja a személyes vizsgálaton. A konzultáció során diszkréten átbeszéljük a lehetőségeket és az esetleges műtét részleteit.</p>
-          <a class="text-link" href="mailto:feketedoktor@gmail.com">Kérdése van? Írjon e-mailt →</a>
+          <p class="eyebrow">{copy.konzultacio.eyebrow1}</p>
+          <h2 id="konzultacio-title">{copy.konzultacio.heading1}</h2>
+          <p>{copy.konzultacio.paragraph1}</p>
+          <p>{copy.konzultacio.paragraph2}</p>
+          <a class="text-link" href={`mailto:${practice.email}`}>{copy.konzultacio.button1}</a>
         </section>
         <section id="video" aria-labelledby="video-title">
-          <p class="eyebrow">Dr. Fekete Ferenc tájékoztatója</p>
-          <h2 id="video-title">Péniszgörbület: tudnivalók videón</h2>
-          <p>Ha szívesebben hallgatná meg a tájékoztatást, nézze meg Dr. Fekete Ferenc videóját.</p>
+          <p class="eyebrow">{copy.video.eyebrow1}</p>
+          <h2 id="video-title">{copy.video.heading1}</h2>
+          <p>{copy.video.paragraph1}</p>
           <div class="treatment-note">
-            <h3>A legfontosabb tudnivalók röviden</h3>
-            <ul><li>A kezelés megválasztásánál a görbület oka és változása is számít.</li><li>A műtét célja az együttlét megkönnyítése; tökéletes egyenesség nem garantálható.</li><li>A lehetséges rövidülést, kockázatokat és felépülést a konzultáción kell átbeszélni.</li></ul>
+            <h3>{copy.video.heading2}</h3>
+            <ul><li>{copy.video.text1}</li><li>{copy.video.text2}</li><li>{copy.video.text3}</li></ul>
           </div>
           <div class="video-embed">
             <iframe
@@ -96,7 +99,7 @@ import ContactCTA from "../components/ContactCTA.astro";
               allowfullscreen
             ></iframe>
           </div>
-          <p class="video-link"><a class="text-link" href="https://www.youtube.com/watch?v=e8p4opFKwx0" target="_blank" rel="noopener noreferrer">Megtekintés a YouTube-on →</a></p>
+          <p class="video-link"><a class="text-link" href="https://www.youtube.com/watch?v=e8p4opFKwx0" target="_blank" rel="noopener noreferrer">{copy.video.button1}</a></p>
         </section>
         <MedicalEditorial />
 
