@@ -18,7 +18,7 @@
   "attekintes": {
     "eyebrow1": "Röviden",
     "heading1": "Mit érdemes tudni a kezelésről?",
-    "paragraph1": "A panaszokat fitymaszűkület, rövid fitymafék vagy ezek együttes fennállása is okozhatja, ezért a kezelés nem mindenkinél azonos.\n\nRövid fitymafék esetén egy kisebb műtéti beavatkozás, a fitymafékplasztika jelenthet megoldást.\n\nEnyhébb fitymaszűkület esetén orvosi javaslatra szteroidtartalmú krémek alkalmazása, a kezelésre nem javuló, kifejezetten heges vagy visszatérően gyulladt fitymaszűkület esetén műtéti megoldás válhat szükségessé.\nEz legtöbbször a heges fitymarész eltávolítását vagy indokolt esetben körülmetélést jelenthet.\n\nA megfelelő kezelési módot a panaszok, a korábbi kezelések eredményessége és a személyes vizsgálat alapján lehet kiválasztani."
+    "paragraph1": "A panaszokat fitymaszűkület, rövid fitymafék vagy ezek együttes fennállása is okozhatja, ezért a kezelés nem mindenkinél azonos.\nRövid fitymafék esetén egy kisebb műtéti beavatkozás, a fitymafékplasztika jelenthet megoldást.\nEnyhébb fitymaszűkület esetén orvosi javaslatra szteroidtartalmú krémek alkalmazása, a kezelésre nem javuló, kifejezetten heges vagy visszatérően gyulladt fitymaszűkület esetén műtéti megoldás válhat szükségessé.\nEz legtöbbször a heges fitymarész eltávolítását vagy indokolt esetben körülmetélést jelenthet.\nA megfelelő kezelési módot a panaszok, a korábbi kezelések eredményessége és a személyes vizsgálat alapján lehet kiválasztani."
   },
   "tunetek": {
     "eyebrow1": "A panaszok háttere",
@@ -32,11 +32,11 @@
   "kezeles": {
     "eyebrow1": "Vizsgálat és kezelés",
     "heading1": "Gyógyszeres kezelés, fékplasztika vagy körülmetélés?",
-    "paragraph1": "A vizsgálat során először azt tisztázzuk, hogy a panaszt a fityma szűkülete, a fék rövidsége vagy mindkettő okozza-e. A kezelés ezután az eltérés jellegéhez és súlyosságához igazodik.",
-    "paragraph2": "**Nem minden fitymaszűkület igényel műtétet.** Egyes enyhébb esetekben orvos által javasolt szteroidtartalmú helyi kezelés is segíthet. Heges fitymaszűkület esetén azonban a műtét nélküli, helyi kezelés kevésbé hatékony, ezért műtéti beavatkozás gyakrabban válhat szükségessé .",
+    "paragraph1": "A vizsgálat során először azt tisztázzuk, hogy a panaszt a fityma szűkülete, a fék rövidsége vagy mindkettő okozza-e. \nA kezelés ezután az eltérés jellegéhez és súlyosságához igazodik.",
+    "paragraph2": "**Nem minden fitymaszűkület igényel műtétet.** \n\nEgyes enyhébb esetekben orvos által javasolt szteroidtartalmú helyi kezelés is segíthet. \n\nHeges fitymaszűkület esetén azonban a műtét nélküli, helyi kezelés kevésbé hatékony, ezért műtéti beavatkozás gyakrabban válhat szükségessé .",
     "paragraph3": "A nem megfelelő krémek használata és az erőltetett nyújtás ronthat a panaszokon. A kezelést ezért érdemes személyes vizsgálat során egyeztetni.",
     "heading2": "Ha műtétre van szükség",
-    "paragraph4": "A műtét nem minden esetben jelenti a teljes fityma eltávolítását. Ha a panaszokat kizárólag a rövid fitymafék okozza, annak műtéti korrekciója elegendő lehet. Heges, krónikusan gyulladt fitymaszűkület esetén körülmetélésre is szükség lehet, míg a fitymamegtartó műtéti megoldások alkalmazhatósága a szűkület jellegétől és a hegesedés mértékétől függ. A vizsgálat alapján átbeszéljük, melyik megoldás jöhet szóba az adott esetben."
+    "paragraph4": "A műtét nem minden esetben jelenti a teljes fityma eltávolítását. \nHa a panaszokat kizárólag a rövid fitymafék okozza, annak műtéti korrekciója elegendő lehet. \nHeges, krónikusan gyulladt fitymaszűkület esetén körülmetélésre is szükség lehet, míg a fitymamegtartó műtéti megoldások alkalmazhatósága a szűkület jellegétől és a hegesedés mértékétől függ. \nA vizsgálat alapján átbeszéljük, melyik megoldás jöhet szóba az adott esetben."
   },
   "felepules": {
     "paragraph1": "A beavatkozás után pár napig fájdalom, duzzanat vagy érzékenység jelentkezhet. Ezek mértéke és időtartama a műtét típusától és az egyéni gyógyulástól függ. A kellemetlenségek általában jól kezelhetők, szükség esetén fájdalomcsillapítóval, jegeléssel.",
