@@ -23,20 +23,20 @@
   "tunetek": {
     "eyebrow1": "A panaszok háttere",
     "heading1": "Fitymaszűkület vagy rövid fék?",
-    "paragraph1": "**Fitymaszűkület esetén a fityma nyílása túl szűk**, ezért a bőr nehezen húzható hátra a makkról. A szűk rész együttlét közben szoríthat, fájdalmat okozhat, és be is repedhet. A szűkület súlyosabb esetekben a tisztántartást is",
-    "paragraph2": "**A fitymafék a makk alsó részén húzódó kis bőrredő.** Ha túl rövid, a fityma hátrahúzásakor vagy együttlét közben megfeszülhet, fájhat, esetenként megsérülhet. A rövid fék és a fitymaszűkület külön-külön, de együtt is előfordulhat.",
-    "paragraph3": "A visszatérő berepedések hegesedéssel gyógyulhatnak, ami tovább fokozhatja a szűkületet. Ha a fityma nem húzható megfelelően hátra, a makk tisztán tartása is nehezebbé válik, és gyulladás alakulhat ki.",
+    "paragraph1": "**Fitymaszűkület esetén a fityma nyílása túl szűk**, ezért a bőr nehezen húzható hátra a makkról. A szűk rész együttlét közben szoríthat, fájdalmat okozhat, és be is repedhet. A szűkület súlyosabb esetekben a tisztán tartást is nehezíti.",
+    "paragraph2": "**A fitymafék a makk alsó részén húzódó kis bőrredő.** Ha túl rövid, akkor  a fityma hátrahúzásakor vagy együttlét közben megfeszülhet, fájhat, esetenként megsérülhet. A rövid fék és a fitymaszűkület külön-külön, de együtt is előfordulhatnak.",
+    "paragraph3": "A visszatérő berepedések hegesedéssel gyógyulhatnak, ami tovább fokozhatja a fitymaszűkületet.\nHa a fityma nem húzható megfelelően hátra, a makk tisztán tartása is nehezebbé válhat, ami elősegítheti a gyulladás kialakulását. \nA tartós gyulladás és a fitymaszűkület bizonyos esetekben a hímvesszőrák fokozott kockázatával is összefügghet, ezért a visszatérő panaszok kivizsgálása és megfelelő kezelése fontos.",
     "heading2": "Mikor van szükség sürgős ellátásra?",
-    "paragraph4": "Ha a hátrahúzott fityma a makk mögött megszorul, és nem húzható előre a makkra, **azonnal kérjen urológiai ellátást**. A kialakuló duzzanat és keringési zavar gyorsan súlyosbodhat, ezért ilyenkor ne várjon egy későbbi rendelési időpontra."
+    "paragraph4": "Ha a hátrahúzott fityma a makk mögött megszorul, és nem húzható előre a makkra, **azonnal kérjen urológiai ellátást**. A kialakuló duzzanat és keringési zavar gyorsan súlyosbodhat, ezért ilyenkor ne várjon hanem jelentkezzen az ügyeletes urológián."
   },
   "kezeles": {
     "eyebrow1": "Vizsgálat és kezelés",
     "heading1": "Gyógyszeres kezelés, fékplasztika vagy körülmetélés?",
     "paragraph1": "A vizsgálat során először azt tisztázzuk, hogy a panaszt a fityma szűkülete, a fék rövidsége vagy mindkettő okozza-e. A kezelés ezután az eltérés jellegéhez és súlyosságához igazodik.",
-    "paragraph2": "**Nem minden fitymaszűkület igényel műtétet.** Egyes enyhébb esetekben orvos által javasolt gyógyszeres krém is segíthet. Heges szűkületnél azonban a krémes kezelés kevésbé hatékony, ezért gyakrabban van szükség beavatkozásra.",
+    "paragraph2": "**Nem minden fitymaszűkület igényel műtétet.** Egyes enyhébb esetekben orvos által javasolt szteroidtartalmú helyi kezelés is segíthet. Heges fitymaszűkület esetén azonban a műtét nélküli, helyi kezelés kevésbé hatékony, ezért műtéti beavatkozás gyakrabban válhat szükségessé .",
     "paragraph3": "A nem megfelelő krémek használata és az erőltetett nyújtás ronthat a panaszokon. A kezelést ezért érdemes személyes vizsgálat során egyeztetni.",
     "heading2": "Ha műtétre van szükség",
-    "paragraph4": "A műtét nem minden esetben jelenti a teljes fityma eltávolítását. Ha önmagában a rövid fék okozza a panaszt, annak műtéti meghosszabbítása elegendő lehet. Heges, krónikusan gyulladt fitymaszűkület esetén körülmetélésre is szükség lehet, a fitymamegtartó eljárások felnőttkorban csak válogatott esetekben megfelelőek. A vizsgálat alapján átbeszéljük, melyik megoldás jöhet szóba."
+    "paragraph4": "A műtét nem minden esetben jelenti a teljes fityma eltávolítását. Ha a panaszokat kizárólag a rövid fitymafék okozza, annak műtéti korrekciója elegendő lehet. Heges, krónikusan gyulladt fitymaszűkület esetén körülmetélésre is szükség lehet, míg a fitymamegtartó műtéti megoldások alkalmazhatósága a szűkület jellegétől és a hegesedés mértékétől függ. A vizsgálat alapján átbeszéljük, melyik megoldás jöhet szóba az adott esetben."
   },
   "felepules": {
     "paragraph1": "A beavatkozás után pár napig fájdalom, duzzanat vagy érzékenység jelentkezhet. Ezek mértéke és időtartama a műtét típusától és az egyéni gyógyulástól függ. A kellemetlenségek általában jól kezelhetők, szükség esetén fájdalomcsillapítóval, jegeléssel.",
