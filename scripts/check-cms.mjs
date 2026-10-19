@@ -10,7 +10,7 @@ const normalize = value => value.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, '
   .replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"')
   .replace(/&#(?:39|x27);/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>')
   .replace(/\*\*/g, '').replace(/\*/g, '').replace(/\s+/g, '');
-const htmlByRoute = Object.fromEntries(['index', 'dr-fekete-ferenc', 'fitymaszukulet', 'papulak', 'peniszgorbulet'].map(name => [name,
+const htmlByRoute = Object.fromEntries(['index', 'dr-fekete-ferenc', 'fitymaszukulet', 'papulak', 'peniszgorbulet', 'koltsegek'].map(name => [name,
   readFileSync(name === 'index' ? 'dist/index.html' : `dist/${name}/index.html`, 'utf8')]));
 let checked = 0;
 function check(fields, data, path, html) {

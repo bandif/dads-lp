@@ -5,7 +5,7 @@ Open **https://fitymaszukulet.hu/admin/** and sign in with your invited email ad
 The editor is in Hungarian:
 
 - **Főoldal**: opening section, treatment cards, reviews, introduction, benefits, appointment steps, and FAQs.
-- **Aloldalak**: the doctor's profile and the three treatment pages, grouped by their visible sections.
+- **Aloldalak**: the doctor's profile, the three treatment pages, and **Költségek**. On Költségek, edit the introduction, treatment names, prices, notes, and closing information. Treatments can be added, removed, and reordered; enter prices as displayed text (for example, `100 000 Ft` or `150 000–400 000 Ft`). The email address follows **Közös elemek → Rendelő adatai**.
 - **Közös elemek**: contact details, header/menu, footer, contact section, and the information-page footnote.
 
 Choose a section, change its text or select/upload an image, then publish. Publication commits the content to `main`; Netlify rebuilds the website. Wait for that deployment to finish before checking the public page. Phone/email/map links follow the contact details automatically. Existing image descriptions remain in the templates; the editor has no alt-text, SEO, CSS, or HTML fields.
