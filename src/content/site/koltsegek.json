@@ -1,13 +1,12 @@
 {
   "heading": "Költségek",
-  "lead": "Vizsgálati és műtéti díjak, a beavatkozás utáni kapcsolattartással és utókezeléssel.",
-  "introHeading": "Mit tartalmaz a kezelési díj?",
   "intro": [
-    "Amikor orvosi kezelések, műtétek költségeiről beszélünk, és ezekhez orvost választunk, érdemes mérlegelni, mit kapunk ezért a díjért.",
-    "Rendszeresen jelentkeznek máshol kezelt, műtött betegek tanácsért, mert az orvosuk nem elérhető, nem veszi fel a telefont, nem válaszol az e-mailre. A műtét utáni kapcsolattartás a kezelő vagy műtő orvos feladata. Nálam a telefon be van kapcsolva, az üzeneteket szabadság alatt is mindennap többször elolvasom, és ha sürgős, válaszolok rájuk.",
-    "A kezelési és műtéti díj a beavatkozáson kívül tartalmazza az otthoni ápoláshoz kiadott speciális kötszereket, a műtét utáni internetes és/vagy telefonos kapcsolattartást, valamint szükség esetén a személyes ellenőrzést a gyógyulásig."
+    "Amikor orvosi kezelések, műtétek költségeiről beszélünk, és ezekhez orvost választunk, érdemes mérlegelni, mit kapunk ezért a díjért. A műtét utáni kapcsolattartás a kezelő vagy műtő orvos feladata. \nA műtéti díj tartalmazza a beavatkozást, utána rövid megfigyelést, az otthoni teendők megbeszélését, a szükséges otthoni kötszerek kiadását, valamint a gyógyulásig internetes kapcsolattartást vagy személyes viziteket-ha azok szükségesek."
   ],
+  "questionText": "Speciális esetekben e-mailben lehet érdeklődni. Az e-mailekre Dr. Fekete Ferenc egy-két napon belül válaszol.",
+  "introHeading": "Mit tartalmaz a kezelési díj?",
   "pricesHeading": "Vizsgálatok és beavatkozások",
+  "notice": "Valamennyi általunk végzett műtét gyógyító műtét, és nem esztétikai okból végzett beavatkozás.",
   "treatments": [
     {
       "name": "Vizsgálat, megbeszélés, műtéti előjegyzés",
@@ -70,7 +69,6 @@
       "note": "Ha a gyógyszeres kezelés mellett sem lehetséges a közösülés. A költség az implantátum típusától és árától függ (hajlítható vagy pumpás). A hidraulikus, pumpás implantátumok műtétje a pécsi magánklinikával való együttműködésben történik."
     }
   ],
-  "notice": "Valamennyi általunk végzett műtét gyógyító műtét, és nem esztétikai okból végzett beavatkozás.",
   "questionHeading": "Speciális esettel kapcsolatban érdeklődne?",
-  "questionText": "Speciális esetekben e-mailben lehet érdeklődni. Az e-mailekre Dr. Fekete Ferenc egy-két napon belül válaszol."
+  "lead": "Vizsgálati és műtéti díjak, a beavatkozás utáni kapcsolattartással és utókezeléssel."
 }
