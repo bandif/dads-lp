@@ -1,0 +1,74 @@
+{
+  "heading": "Költségek",
+  "intro": [
+    "Amikor orvosi kezelések, műtétek költségeiről beszélünk, és ezekhez orvost választunk, érdemes mérlegelni, mit kapunk ezért a díjért. A műtét utáni kapcsolattartás a kezelő vagy műtő orvos feladata. \nA műtéti díj tartalmazza a beavatkozást, utána rövid megfigyelést, az otthoni teendők megbeszélését, a szükséges otthoni kötszerek kiadását, valamint a gyógyulásig internetes kapcsolattartást vagy személyes viziteket-ha azok szükségesek."
+  ],
+  "questionText": "Speciális esetekben e-mailben lehet érdeklődni. Az e-mailekre Dr. Fekete Ferenc egy-két napon belül válaszol.",
+  "introHeading": "Mit tartalmaz a kezelési díj?",
+  "pricesHeading": "Vizsgálatok és beavatkozások",
+  "notice": "Valamennyi általunk végzett műtét gyógyító műtét, és nem esztétikai okból végzett beavatkozás.",
+  "treatments": [
+    {
+      "name": "Vizsgálat, megbeszélés, műtéti előjegyzés",
+      "price": "20 000 Ft",
+      "note": "Fitymaszűkület, péniszgörbület vagy rövid fék esetén."
+    },
+    {
+      "name": "Rövid fitymafék műtétje",
+      "price": "100 000 Ft",
+      "note": ""
+    },
+    {
+      "name": "Papulák (PPP), a makk peremén lévő mirigyek eltávolítása",
+      "price": "120 000 Ft",
+      "note": "Ismételt kezelés fél éven belül: 40 000 Ft."
+    },
+    {
+      "name": "Rövid fitymafék műtétje és papulák eltávolítása",
+      "price": "150 000 Ft",
+      "note": ""
+    },
+    {
+      "name": "Fitymaszűkület műtétje",
+      "price": "300 000 Ft",
+      "note": "Műtét utáni kapcsolattartással, ellenőrzéssel, az otthoni kezeléshez szükséges kötszerekkel és útmutatóval."
+    },
+    {
+      "name": "Fitymaszűkület műtétje 120 kg testsúly felett",
+      "price": "350 000 Ft",
+      "note": "A visszahúzódó pénisz miatt legtöbbször gyulladás van; az utókezelés elhúzódó."
+    },
+    {
+      "name": "Vissza nem húzható fityma műtétje",
+      "price": "350 000 Ft",
+      "note": "Nehezebb, hosszabb beavatkozás. Gyulladás is gyakran fennáll, az utókezelés elhúzódó lehet."
+    },
+    {
+      "name": "A bőr további rövidítése",
+      "price": "200 000 Ft",
+      "note": "Idővel megnyúlt, kitágult bőr esetén, korábban nálam végzett műtét után."
+    },
+    {
+      "name": "Máshol végzett műtét utáni korrekció",
+      "price": "150 000–400 000 Ft",
+      "note": "A rossz eredmény javításának díja a hegesedéstől, a heg mennyiségétől és az eset körülményeitől függ."
+    },
+    {
+      "name": "Fitymaszűkület műtétje és a makk peremén lévő mirigyek eltávolítása",
+      "price": "380 000 Ft",
+      "note": ""
+    },
+    {
+      "name": "Péniszgörbület műtétje",
+      "price": "450 000–950 000 Ft",
+      "note": "A görbület fokától és bonyolultságától függ a műtét hossza, illetve az, hogy melyik műtőben, hol lehet a legjobban elvégezni."
+    },
+    {
+      "name": "Implantátum beültetése merevedési képtelenség esetén",
+      "price": "2,4–4,2 millió Ft",
+      "note": "Ha a gyógyszeres kezelés mellett sem lehetséges a közösülés. A költség az implantátum típusától és árától függ (hajlítható vagy pumpás). A hidraulikus, pumpás implantátumok műtétje a pécsi magánklinikával való együttműködésben történik."
+    }
+  ],
+  "questionHeading": "Speciális esettel kapcsolatban érdeklődne?",
+  "lead": "Vizsgálati és műtéti díjak, a beavatkozás utáni kapcsolattartással és utókezeléssel."
+}

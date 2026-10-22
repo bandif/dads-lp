@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 
 const root = 'https://fitymaszukulet.hu';
-const routes = ['/', '/dr-fekete-ferenc/', '/fitymaszukulet/', '/papulak/', '/peniszgorbulet/'];
+const routes = ['/', '/dr-fekete-ferenc/', '/fitymaszukulet/', '/papulak/', '/peniszgorbulet/', '/koltsegek/'];
 const titles = new Set();
 const descriptions = new Set();
 const sitemap = readFileSync('dist/sitemap.xml', 'utf8');
@@ -50,4 +50,4 @@ for (const route of routes) {
     assert.ok(existsSync(`dist${path}`) || existsSync(`dist${path}/index.html`), `${route}: missing link ${path}`);
   }
 }
-console.log('SEO checks passed: five pages, sitemap, robots, metadata, schema references, dates, sources and internal links.');
+console.log('SEO checks passed: six pages, sitemap, robots, metadata, schema references, dates, sources and internal links.');

@@ -1,11 +1,11 @@
 {
   "section1": {
-    "image1": "/dr-fekete-ferenc-mutoben.jpg",
+    "image1": "/uploads/műtőlámpa-alatti-orvosi-szelfi.png",
     "button1": "← Vissza a főoldalra",
     "eyebrow1": "Szakmai bemutatkozás",
     "heading1": "Dr. Fekete Ferenc",
     "paragraph1": "Urológus szakorvos · FECSM",
-    "paragraph2": "Fő szakterülete a férfi nemi szervek betegségeinek kivizsgálása és műtéti kezelése. Több évtizedes klinikai tapasztalata mellett egyetemi oktatással és szakmai könyvek írásával is foglalkozik.",
+    "paragraph2": "Fő szakterülete a férfi urológiai valamint a szexuális problémák kivizsgálása és műtéti kezelése. Több évtizedes klinikai tapasztalata mellett egyetemi oktatással és szakmai könyvek írásával is foglalkozik.\n",
     "button2": "Időpont egyeztetés"
   },
   "section2": {
@@ -20,7 +20,7 @@
     "heading1": "Orvosi pálya és szakképzettség",
     "paragraph1": "**1982-ben szerzett orvosi diplomát a budapesti Semmelweis Egyetemen.** Egyetemi évei alatt kétszer nyert sebészeti tanulmányi versenyt.",
     "paragraph2": "Pályáját az Orvostovábbképző Egyetem Urológiai Klinikáján kezdte. 1987-ben szakvizsgázott urológiából, majd a klinikán egyetemi oktatóként is dolgozott.",
-    "paragraph3": "2000 óta a Semmelweis Egyetem Urológiai Klinikájának munkatársa, ahol speciális műtéteket végez, és részt vesz a szexuális medicina egyetemi oktatásában.",
+    "paragraph3": "2000 óta a Semmelweis Egyetem Urológiai Klinikájának külső munkatársa, speciális műtéteket végez, és részt vesz a szexuális medicina egyetemi oktatásában.",
     "paragraph4": "2012-ben sikeres európai szakmai vizsgával megszerezte a **FECSM** (Fellow of the European Committee of Sexual Medicine) címet, amely a szexuális medicina területén szerzett szaktudását ismeri el."
   },
   "tapasztalat": {
@@ -38,14 +38,14 @@
     "paragraph2": "Egyetemi oktatói tevékenysége mellett nemzetközi tudományos folyóiratokban is jelentek meg közleményei. Szakmai tapasztalatait orvosoknak és betegeknek szóló könyvekben is megosztja."
   },
   "konyvek": {
+    "paragraph1": "1995-ben jelent meg **Impotencia** című könyve, 1999-ben pedig az **Erekciós zavarok** a Springer kiadónál. Társszerzője az *Esztétikai Plasztikai Sebészet*, a *Tabularium Urologiae* és az *Urológia mindenkinek* című köteteknek is.",
+    "paragraph2": "Fekete Ferenc · Springer, 1999",
+    "paragraph3": "Dr. Romics Imre – Dr. Fekete Ferenc · Springer",
     "eyebrow1": "Szerzőként és társszerzőként",
     "heading1": "Könyvek és publikációk",
-    "paragraph1": "1995-ben jelent meg **Impotencia** című könyve, 1999-ben pedig az **Erekciós zavarok** a Springer kiadónál. Társszerzője az *Esztétikai Plasztikai Sebészet*, a *Tabularium Urologiae* és az *Urológia mindenkinek* című köteteknek is.",
-    "image1": "/erekcios-zavarok.png",
     "heading2": "Erekciós zavarok",
-    "paragraph2": "Fekete Ferenc · Springer, 1999",
-    "image2": "/urologia-mindenkinek.png",
     "heading3": "Urológia mindenkinek",
-    "paragraph3": "Dr. Romics Imre – Dr. Fekete Ferenc · Springer"
+    "image1": "/erekcios-zavarok.png",
+    "image2": "/urologia-mindenkinek.png"
   }
 }

@@ -1888,6 +1888,83 @@
               ]
             }
           ]
+        },
+        {
+          "name": "koltsegek",
+          "label": "Költségek",
+          "file": "src/content/site/koltsegek.json",
+          "fields": [
+            {
+              "name": "heading",
+              "label": "Oldal címe",
+              "widget": "string"
+            },
+            {
+              "name": "lead",
+              "label": "Bevezető",
+              "widget": "text"
+            },
+            {
+              "name": "introHeading",
+              "label": "A díj tartalma – cím",
+              "widget": "string"
+            },
+            {
+              "name": "intro",
+              "label": "A díj tartalma – bekezdések",
+              "widget": "list",
+              "field": {
+                "name": "paragraph",
+                "label": "Bekezdés",
+                "widget": "text"
+              }
+            },
+            {
+              "name": "pricesHeading",
+              "label": "Árlista címe",
+              "widget": "string"
+            },
+            {
+              "name": "treatments",
+              "label": "Vizsgálatok és beavatkozások",
+              "widget": "list",
+              "summary": "{{fields.name}} – {{fields.price}}",
+              "fields": [
+                {
+                  "name": "name",
+                  "label": "Vizsgálat / beavatkozás neve",
+                  "widget": "string"
+                },
+                {
+                  "name": "price",
+                  "label": "Ár",
+                  "widget": "string",
+                  "hint": "Például: 100 000 Ft vagy 150 000–400 000 Ft"
+                },
+                {
+                  "name": "note",
+                  "label": "Tudnivalók",
+                  "widget": "text",
+                  "required": false
+                }
+              ]
+            },
+            {
+              "name": "notice",
+              "label": "Fontos tudnivaló",
+              "widget": "text"
+            },
+            {
+              "name": "questionHeading",
+              "label": "Érdeklődés – cím",
+              "widget": "string"
+            },
+            {
+              "name": "questionText",
+              "label": "Érdeklődés – szöveg",
+              "widget": "text"
+            }
+          ]
         }
       ]
     },
@@ -2067,6 +2144,18 @@
                     {
                       "name": "label",
                       "label": "Felirat",
+                      "widget": "string"
+                    }
+                  ]
+                },
+                {
+                  "name": "item5",
+                  "label": "Költségek",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "label",
+                      "label": "Menüpont felirata",
                       "widget": "string"
                     }
                   ]
