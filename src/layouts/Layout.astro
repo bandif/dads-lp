@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Analytics from "../components/Analytics.astro";
 import hero from "../content/site/Hero.json";
 import profile from "../content/site/dr-fekete-ferenc.json";
 import { practice } from "../data/practice";
@@ -82,6 +83,7 @@ const schema = {
   </head>
   <body>
     <slot />
+    <Analytics />
     <script>
       import "../scripts/contents-navigation";
     </script>

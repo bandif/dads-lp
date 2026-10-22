@@ -1,0 +1,28 @@
+<div class="analytics-settings">
+  <button type="button" id="analytics-settings">Statisztikai sütik beállítása</button>
+</div>
+<dialog id="analytics-consent" aria-labelledby="analytics-title" aria-describedby="analytics-description">
+  <h2 id="analytics-title">Statisztikai sütik</h2>
+  <p id="analytics-description">
+    Engedélyezi a Google Analytics használatát? Segítségével mérjük az oldalmegtekintéseket
+    és a kapcsolatfelvételi gombok kattintásait. Ehhez a Google sütiket helyezhet el az
+    eszközén, és látogatási adatokat kap. Hirdetési célú személyre szabást nem engedélyezünk.
+    Döntését bármikor módosíthatja az oldal alján.
+  </p>
+  <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">A Google adatvédelmi tájékoztatója</a></p>
+  <div class="analytics-actions">
+    <button type="button" id="analytics-reject">Elutasítom</button>
+    <button type="button" id="analytics-accept">Engedélyezem</button>
+  </div>
+</dialog>
+<script is:inline src="/analytics.js" defer></script>
+<style>
+  .analytics-settings { padding: 1rem; text-align: center; }
+  dialog { max-width: 36rem; width: calc(100% - 2rem); max-height: 85vh; overflow: auto; padding: 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); color: var(--text); background: var(--surface); }
+  dialog::backdrop { background: rgb(18 48 71 / 45%); }
+  h2 { font-size: 1.5rem; }
+  a { text-decoration: underline; }
+  .analytics-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
+  button { cursor: pointer; font: inherit; color: var(--text); background: var(--soft); border: 1px solid var(--line); border-radius: var(--radius); padding: .65rem 1rem; }
+  button:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+</style>
